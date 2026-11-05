@@ -1,0 +1,2617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informe de Capacitación y Motivación 2026 · Jeantex S.A.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   VARIABLES Y RESET
+   ============================================================ */
+:root{
+  --navy:#0A1E3F;
+  --navy-2:#12294F;
+  --navy-3:#1B3A66;
+  --teal:#0EA5A5;
+  --teal-2:#14B8A6;
+  --teal-soft:#CCFBF1;
+  --gold:#F59E0B;
+  --gold-soft:#FEF3C7;
+  --coral:#EF4444;
+  --coral-soft:#FEE2E2;
+  --green:#10B981;
+  --green-soft:#D1FAE5;
+  --blue:#3B82F6;
+  --blue-soft:#DBEAFE;
+  --purple:#8B5CF6;
+  --purple-soft:#EDE9FE;
+  --gray-50:#F8FAFC;
+  --gray-100:#F1F5F9;
+  --gray-200:#E2E8F0;
+  --gray-300:#CBD5E1;
+  --gray-500:#64748B;
+  --gray-600:#475569;
+  --gray-700:#334155;
+  --gray-900:#0F172A;
+  --white:#FFFFFF;
+  --shadow-sm:0 1px 2px rgba(10,30,63,.05);
+  --shadow:0 4px 16px rgba(10,30,63,.08);
+  --shadow-lg:0 12px 40px rgba(10,30,63,.14);
+  --radius-sm:8px;
+  --radius:14px;
+  --radius-lg:22px;
+  --font:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display:'Playfair Display', Georgia, serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{
+  font-family:var(--font);
+  color:var(--gray-700);
+  background:var(--gray-50);
+  line-height:1.6;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--teal);text-decoration:none}
+h1,h2,h3,h4{color:var(--navy);line-height:1.15;font-weight:800;letter-spacing:-.02em}
+h1{font-size:clamp(2rem,4vw,3.4rem)}
+h2{font-size:clamp(1.6rem,2.6vw,2.3rem)}
+h3{font-size:1.25rem}
+p{color:var(--gray-600)}
+
+/* ============================================================
+   NAVEGACIÓN
+   ============================================================ */
+.topnav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(10,30,63,.92);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.nav-inner{
+  max-width:1400px;margin:0 auto;
+  display:flex;align-items:center;gap:1.5rem;
+  padding:.7rem 1.5rem;
+}
+.nav-brand{
+  display:flex;align-items:center;gap:.6rem;
+  color:#fff;font-weight:800;font-size:.95rem;letter-spacing:.04em;
+  white-space:nowrap;
+}
+.nav-brand .dot{
+  width:10px;height:10px;border-radius:50%;
+  background:linear-gradient(135deg,var(--teal),var(--gold));
+  box-shadow:0 0 12px rgba(20,184,166,.6);
+}
+.nav-links{
+  display:flex;gap:.25rem;overflow-x:auto;
+  flex:1;scrollbar-width:none;
+}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{
+  color:rgba(255,255,255,.65);
+  font-size:.78rem;font-weight:600;
+  padding:.5rem .8rem;border-radius:8px;
+  white-space:nowrap;transition:all .2s;
+}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav-links a.active{color:#fff;background:rgba(20,184,166,.25)}
+.nav-print{
+  background:linear-gradient(135deg,var(--teal),#0d8a8a);
+  color:#fff;border:none;padding:.55rem 1rem;
+  border-radius:8px;font-weight:700;font-size:.78rem;
+  cursor:pointer;display:flex;align-items:center;gap:.4rem;
+  transition:all .2s;white-space:nowrap;
+}
+.nav-print:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(20,184,166,.35)}
+.nav-print svg{width:16px;height:16px}
+
+/* ============================================================
+   PORTADA
+   ============================================================ */
+.cover{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(20,184,166,.18) 0%, transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(245,158,11,.14) 0%, transparent 45%),
+    linear-gradient(135deg,#061530 0%, #0A1E3F 50%, #12294F 100%);
+  color:#fff;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:6rem 2rem 3rem;
+  position:relative;overflow:hidden;
+}
+.cover::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse at center, black 30%, transparent 75%);
+  -webkit-mask-image:radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
+.cover-inner{max-width:1200px;margin:0 auto;width:100%;position:relative;z-index:2}
+.cover-logo{
+  display:inline-flex;align-items:center;gap:.8rem;
+  padding:.5rem 1.1rem;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:100px;
+  margin-bottom:2.5rem;
+  backdrop-filter:blur(10px);
+}
+.cover-logo .mark{
+  width:36px;height:36px;border-radius:10px;
+  background:linear-gradient(135deg,var(--teal),var(--gold));
+  display:grid;place-items:center;
+  font-weight:900;font-size:1.1rem;color:#fff;
+}
+.cover-logo .name{font-weight:800;letter-spacing:.12em;font-size:.85rem}
+.cover-eyebrow{
+  color:var(--teal-2);font-weight:700;font-size:.8rem;
+  letter-spacing:.25em;text-transform:uppercase;margin-bottom:1rem;
+}
+.cover h1{
+  color:#fff;
+  font-size:clamp(2.2rem,5.5vw,4.5rem);
+  font-weight:900;letter-spacing:-.03em;
+  line-height:1.05;margin-bottom:1rem;
+  max-width:900px;
+}
+.cover h1 .accent{
+  background:linear-gradient(135deg,var(--teal-2),var(--gold));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.cover-subtitle{
+  color:rgba(255,255,255,.7);
+  font-size:clamp(1rem,1.5vw,1.25rem);
+  max-width:640px;margin-bottom:3rem;font-weight:400;
+}
+.cover-meta{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:1rem;max-width:860px;margin-bottom:3rem;
+}
+.cover-meta-item{
+  padding:1rem 1.2rem;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--radius);
+}
+.cover-meta-item .label{
+  font-size:.7rem;font-weight:700;letter-spacing:.15em;
+  text-transform:uppercase;color:rgba(255,255,255,.5);
+  margin-bottom:.35rem;
+}
+.cover-meta-item .value{font-size:1rem;font-weight:700;color:#fff}
+.cover-footer{
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:1rem;
+  padding-top:2rem;border-top:1px solid rgba(255,255,255,.12);
+  color:rgba(255,255,255,.5);font-size:.8rem;
+}
+.cover-scroll{
+  display:inline-flex;align-items:center;gap:.5rem;
+  color:var(--teal-2);font-weight:600;font-size:.85rem;
+}
+.cover-scroll svg{width:18px;height:18px;animation:bounce 2s infinite}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+
+/* ============================================================
+   LAYOUT GENERAL
+   ============================================================ */
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.section{padding:5rem 0}
+.section-alt{background:#fff}
+.section-dark{
+  background:linear-gradient(135deg,#0A1E3F,#12294F);
+  color:#fff;
+}
+.section-dark h2,.section-dark h3{color:#fff}
+.section-dark p{color:rgba(255,255,255,.7)}
+
+.section-head{margin-bottom:2.5rem;max-width:820px}
+.section-num{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:38px;height:38px;padding:0 .5rem;
+  background:linear-gradient(135deg,var(--teal),#0d8a8a);
+  color:#fff;font-weight:800;font-size:.9rem;
+  border-radius:10px;margin-bottom:1rem;
+  box-shadow:0 8px 20px rgba(20,184,166,.3);
+}
+.section-num.gold{background:linear-gradient(135deg,var(--gold),#d97706);box-shadow:0 8px 20px rgba(245,158,11,.3)}
+.section-head h2{margin-bottom:.6rem}
+.section-head p{font-size:1.05rem;max-width:640px}
+
+.eyebrow{
+  color:var(--teal);font-weight:700;font-size:.75rem;
+  letter-spacing:.2em;text-transform:uppercase;
+  margin-bottom:.5rem;display:block;
+}
+.section-dark .eyebrow{color:var(--teal-2)}
+
+/* ============================================================
+   TARJETAS KPI
+   ============================================================ */
+.kpi-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:1.25rem;margin-bottom:3rem;
+}
+.kpi{
+  background:#fff;border:1px solid var(--gray-200);
+  border-radius:var(--radius-lg);
+  padding:1.5rem;
+  position:relative;overflow:hidden;
+  transition:transform .25s, box-shadow .25s;
+}
+.kpi:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.kpi::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--teal),var(--gold));
+}
+.kpi .icon{
+  width:44px;height:44px;border-radius:12px;
+  display:grid;place-items:center;margin-bottom:1rem;
+  font-size:1.3rem;
+}
+.kpi .icon.teal{background:var(--teal-soft);color:#0d7a7a}
+.kpi .icon.gold{background:var(--gold-soft);color:#b45309}
+.kpi .icon.blue{background:var(--blue-soft);color:#1d4ed8}
+.kpi .icon.green{background:var(--green-soft);color:#047857}
+.kpi .icon.purple{background:var(--purple-soft);color:#6d28d9}
+.kpi .icon.coral{background:var(--coral-soft);color:#b91c1c}
+.kpi .num{
+  font-size:2.4rem;font-weight:900;color:var(--navy);
+  letter-spacing:-.03em;line-height:1;
+}
+.kpi .num small{font-size:1.1rem;color:var(--gray-500);font-weight:700}
+.kpi .lbl{
+  font-size:.82rem;color:var(--gray-500);font-weight:600;
+  margin-top:.35rem;
+}
+
+/* ============================================================
+   TABLAS
+   ============================================================ */
+.table-wrap{
+  background:#fff;border-radius:var(--radius-lg);
+  overflow:hidden;box-shadow:var(--shadow);
+  border:1px solid var(--gray-200);
+}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+thead th{
+  background:linear-gradient(135deg,var(--navy),var(--navy-2));
+  color:#fff;text-align:left;padding:1rem 1.1rem;
+  font-weight:700;font-size:.75rem;
+  letter-spacing:.08em;text-transform:uppercase;
+}
+tbody td{
+  padding:1rem 1.1rem;border-bottom:1px solid var(--gray-100);
+  vertical-align:top;
+}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:nth-child(even){background:var(--gray-50)}
+tbody tr:hover{background:var(--teal-soft)}
+.badge{
+  display:inline-block;padding:.25rem .6rem;border-radius:6px;
+  font-size:.72rem;font-weight:700;letter-spacing:.02em;
+}
+.badge.teal{background:var(--teal-soft);color:#0d7a7a}
+.badge.gold{background:var(--gold-soft);color:#b45309}
+.badge.blue{background:var(--blue-soft);color:#1d4ed8}
+.badge.green{background:var(--green-soft);color:#047857}
+.badge.coral{background:var(--coral-soft);color:#b91c1c}
+.badge.purple{background:var(--purple-soft);color:#6d28d9}
+
+/* ============================================================
+   TABS
+   ============================================================ */
+.tabs{
+  display:flex;gap:.4rem;flex-wrap:wrap;
+  padding:.4rem;background:var(--gray-100);
+  border-radius:12px;margin-bottom:1.5rem;
+}
+.tab-btn{
+  flex:1;min-width:130px;
+  padding:.7rem 1rem;border:none;background:transparent;
+  color:var(--gray-600);font-weight:700;font-size:.82rem;
+  border-radius:8px;cursor:pointer;transition:all .2s;
+  font-family:inherit;
+}
+.tab-btn:hover{color:var(--navy)}
+.tab-btn.active{
+  background:#fff;color:var(--navy);
+  box-shadow:var(--shadow-sm);
+}
+.tab-panel{display:none;animation:fadeIn .4s ease}
+.tab-panel.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* ============================================================
+   TARJETAS DE CONTENIDO
+   ============================================================ */
+.card{
+  background:#fff;border:1px solid var(--gray-200);
+  border-radius:var(--radius-lg);padding:1.75rem;
+  box-shadow:var(--shadow-sm);
+}
+.card + .card{margin-top:1.25rem}
+.card-head{
+  display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem;
+  padding-bottom:1rem;border-bottom:1px solid var(--gray-100);
+}
+.card-head .ic{
+  width:42px;height:42px;border-radius:11px;
+  display:grid;place-items:center;font-size:1.2rem;
+  background:linear-gradient(135deg,var(--teal-soft),#e0f7f7);
+  color:#0d7a7a;flex-shrink:0;
+}
+.card-head h3{font-size:1.05rem;margin:0}
+.card-head p{font-size:.8rem;color:var(--gray-500);margin:0}
+
+.content-list{list-style:none;padding:0}
+.content-list li{
+  position:relative;padding:.55rem 0 .55rem 1.8rem;
+  color:var(--gray-600);font-size:.9rem;
+  border-bottom:1px dashed var(--gray-100);
+}
+.content-list li:last-child{border-bottom:none}
+.content-list li::before{
+  content:'';position:absolute;left:0;top:1rem;
+  width:8px;height:8px;border-radius:50%;
+  background:var(--teal);box-shadow:0 0 0 4px var(--teal-soft);
+}
+.content-list strong{color:var(--navy);font-weight:700}
+
+.pill-list{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.pill{
+  padding:.4rem .85rem;border-radius:100px;
+  background:var(--gray-100);color:var(--gray-700);
+  font-size:.78rem;font-weight:600;
+}
+.pill.teal{background:var(--teal-soft);color:#0d7a7a}
+.pill.gold{background:var(--gold-soft);color:#b45309}
+.pill.blue{background:var(--blue-soft);color:#1d4ed8}
+.pill.purple{background:var(--purple-soft);color:#6d28d9}
+
+/* ============================================================
+   PROGRESS BARS
+   ============================================================ */
+.progress-item{margin-bottom:1.1rem}
+.progress-item:last-child{margin-bottom:0}
+.progress-head{
+  display:flex;justify-content:space-between;align-items:baseline;
+  margin-bottom:.4rem;
+}
+.progress-head .name{font-size:.85rem;font-weight:600;color:var(--gray-700)}
+.progress-head .val{font-size:.95rem;font-weight:800;color:var(--navy)}
+.progress-track{
+  height:10px;background:var(--gray-100);border-radius:100px;
+  overflow:hidden;position:relative;
+}
+.progress-fill{
+  height:100%;border-radius:100px;width:0;
+  transition:width 1.2s cubic-bezier(.22,1,.36,1);
+}
+.progress-fill.teal{background:linear-gradient(90deg,var(--teal),var(--teal-2))}
+.progress-fill.gold{background:linear-gradient(90deg,var(--gold),#fbbf24)}
+.progress-fill.coral{background:linear-gradient(90deg,var(--coral),#f87171)}
+.progress-fill.blue{background:linear-gradient(90deg,var(--blue),#60a5fa)}
+.progress-fill.green{background:linear-gradient(90deg,var(--green),#34d399)}
+.progress-fill.purple{background:linear-gradient(90deg,var(--purple),#a78bfa)}
+
+/* ============================================================
+   DONUTS
+   ============================================================ */
+.donut-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1.5rem;
+}
+.donut-card{
+  background:#fff;border:1px solid var(--gray-200);
+  border-radius:var(--radius);padding:1.5rem;text-align:center;
+}
+.donut{
+  width:140px;height:140px;border-radius:50%;
+  margin:0 auto 1rem;position:relative;
+  display:grid;place-items:center;
+}
+.donut::before{
+  content:'';position:absolute;inset:16px;
+  background:#fff;border-radius:50%;
+}
+.donut .inner{
+  position:relative;z-index:1;font-weight:900;
+  font-size:1.5rem;color:var(--navy);
+  letter-spacing:-.03em;
+}
+.donut .inner small{display:block;font-size:.65rem;font-weight:600;color:var(--gray-500);letter-spacing:.05em;margin-top:.15rem}
+.donut-card .title{font-weight:700;color:var(--navy);font-size:.88rem;margin-bottom:.35rem}
+.donut-card .desc{font-size:.78rem;color:var(--gray-500)}
+
+/* ============================================================
+   COMPARE BARS
+   ============================================================ */
+.compare{margin-bottom:1.5rem}
+.compare-title{
+  font-size:.8rem;font-weight:700;color:var(--gray-500);
+  text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem;
+}
+.compare-track{
+  display:flex;height:38px;border-radius:10px;overflow:hidden;
+  background:var(--gray-100);
+}
+.compare-seg{
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:.72rem;font-weight:700;
+  white-space:nowrap;overflow:hidden;padding:0 .5rem;
+}
+.compare-seg.red{background:linear-gradient(90deg,#ef4444,#f87171)}
+.compare-seg.green{background:linear-gradient(90deg,#10b981,#34d399)}
+.compare-seg.gray{background:linear-gradient(90deg,#94a3b8,#cbd5e1)}
+.compare-seg.gold{background:linear-gradient(90deg,#f59e0b,#fbbf24)}
+.compare-seg.blue{background:linear-gradient(90deg,#3b82f6,#60a5fa)}
+
+/* ============================================================
+   MATRIZ EISENHOWER
+   ============================================================ */
+.matrix{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1rem;
+}
+.matrix-cell{
+  border-radius:var(--radius);padding:1.3rem;
+  position:relative;border:2px solid transparent;
+}
+.matrix-cell .q{
+  font-size:.65rem;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;margin-bottom:.35rem;
+}
+.matrix-cell h4{font-size:1rem;margin-bottom:.4rem}
+.matrix-cell p{font-size:.82rem;line-height:1.5}
+.matrix-cell .tag{
+  position:absolute;top:1rem;right:1rem;
+  font-size:.6rem;font-weight:800;letter-spacing:.1em;
+  padding:.2rem .5rem;border-radius:4px;text-transform:uppercase;
+}
+.matrix-cell.q1{background:#FEF2F2;border-color:#FECACA}
+.matrix-cell.q1 .q{color:#B91C1C}
+.matrix-cell.q1 .tag{background:#B91C1C;color:#fff}
+.matrix-cell.q2{background:#ECFDF5;border-color:#A7F3D0}
+.matrix-cell.q2 .q{color:#047857}
+.matrix-cell.q2 .tag{background:#047857;color:#fff}
+.matrix-cell.q3{background:#FFFBEB;border-color:#FDE68A}
+.matrix-cell.q3 .q{color:#B45309}
+.matrix-cell.q3 .tag{background:#B45309;color:#fff}
+.matrix-cell.q4{background:#F8FAFC;border-color:#E2E8F0}
+.matrix-cell.q4 .q{color:#475569}
+.matrix-cell.q4 .tag{background:#475569;color:#fff}
+
+/* ============================================================
+   RECOMENDACIONES
+   ============================================================ */
+.rec-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.25rem;
+}
+.rec{
+  background:#fff;border:1px solid var(--gray-200);
+  border-radius:var(--radius);padding:1.4rem;
+  position:relative;transition:transform .25s,box-shadow .25s;
+}
+.rec:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.rec .num{
+  width:34px;height:34px;border-radius:9px;
+  background:linear-gradient(135deg,var(--navy),var(--navy-3));
+  color:#fff;display:grid;place-items:center;
+  font-weight:800;font-size:.85rem;margin-bottom:.9rem;
+}
+.rec h4{font-size:.95rem;margin-bottom:.4rem;color:var(--navy)}
+.rec p{font-size:.83rem;line-height:1.55}
+
+/* ============================================================
+   HALLAZGOS
+   ============================================================ */
+.findings{display:grid;gap:1rem}
+.finding{
+  display:flex;gap:1rem;padding:1.2rem 1.4rem;
+  border-radius:var(--radius);background:#fff;
+  border-left:4px solid var(--teal);
+  box-shadow:var(--shadow-sm);
+}
+.finding.warn{border-left-color:var(--gold)}
+.finding.alert{border-left-color:var(--coral)}
+.finding.good{border-left-color:var(--green)}
+.finding .ic{font-size:1.3rem;flex-shrink:0;line-height:1.4}
+.finding h4{font-size:.92rem;margin-bottom:.2rem}
+.finding p{font-size:.83rem;line-height:1.55;margin:0}
+
+/* ============================================================
+   TESTIMONIOS
+   ============================================================ */
+.quotes{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1rem;
+}
+.quote{
+  background:linear-gradient(135deg,#f8fafc,#fff);
+  border:1px solid var(--gray-200);
+  border-radius:var(--radius);padding:1.3rem;
+  position:relative;font-style:italic;
+  color:var(--gray-600);font-size:.88rem;
+  line-height:1.6;
+}
+.quote::before{
+  content:'"';position:absolute;top:-8px;left:14px;
+  font-family:var(--font-display);font-size:3.5rem;
+  color:var(--teal);opacity:.25;line-height:1;
+}
+.quote .author{
+  display:block;margin-top:.75rem;font-style:normal;
+  font-size:.72rem;font-weight:700;color:var(--gray-500);
+  letter-spacing:.08em;text-transform:uppercase;
+}
+
+/* ============================================================
+   SECCIÓN DESTACADA / CIERRE
+   ============================================================ */
+.highlight-box{
+  background:linear-gradient(135deg,var(--teal),#0d8a8a);
+  color:#fff;border-radius:var(--radius-lg);
+  padding:2rem;margin-top:2rem;
+  position:relative;overflow:hidden;
+}
+.highlight-box::before{
+  content:'';position:absolute;top:-50%;right:-10%;
+  width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.15),transparent 70%);
+}
+.highlight-box h3{color:#fff;font-size:1.3rem;margin-bottom:.6rem;position:relative}
+.highlight-box p{color:rgba(255,255,255,.9);font-size:.95rem;position:relative;margin:0}
+.highlight-box.gold{
+  background:linear-gradient(135deg,var(--gold),#d97706);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer{
+  background:var(--navy);color:rgba(255,255,255,.6);
+  padding:3rem 1.5rem 2rem;text-align:center;
+}
+.footer .brand{
+  font-family:var(--font-display);font-size:1.4rem;color:#fff;
+  margin-bottom:.5rem;
+}
+.footer p{font-size:.82rem;margin:.25rem 0}
+.footer .meta{
+  margin-top:1.5rem;padding-top:1.5rem;
+  border-top:1px solid rgba(255,255,255,.1);
+  font-size:.75rem;color:rgba(255,255,255,.4);
+}
+
+/* ============================================================
+   BOTÓN TOP
+   ============================================================ */
+.to-top{
+  position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;
+  width:46px;height:46px;border-radius:50%;
+  background:var(--navy);color:#fff;border:none;
+  cursor:pointer;display:grid;place-items:center;
+  box-shadow:var(--shadow-lg);opacity:0;visibility:hidden;
+  transition:all .3s;
+}
+.to-top.show{opacity:1;visibility:visible}
+.to-top:hover{background:var(--teal);transform:translateY(-3px)}
+
+/* ============================================================
+   ANIMACIONES REVEAL
+   ============================================================ */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal.d1{transition-delay:.08s}
+.reveal.d2{transition-delay:.16s}
+.reveal.d3{transition-delay:.24s}
+.reveal.d4{transition-delay:.32s}
+
+/* ============================================================
+   GRIDS AUXILIARES
+   ============================================================ */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.grid-2-1{display:grid;grid-template-columns:2fr 1fr;gap:1.5rem}
+@media(max-width:900px){
+  .grid-2,.grid-3,.grid-2-1{grid-template-columns:1fr}
+  .matrix{grid-template-columns:1fr}
+}
+
+/* ============================================================
+   IMPRESIÓN PDF · LETTER · SEGURO · SIN PÉRDIDA DE INFORMACIÓN
+   ============================================================ */
+@page {
+  size: Letter;
+  margin: 12mm 12mm 14mm 14mm;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html, body {
+    background: #fff !important;
+    font-size: 10.5px;
+    line-height: 1.45;
+  }
+
+  .topnav, .to-top, .nav-print, .cover-scroll, .tabs {
+    display: none !important;
+  }
+
+  .tab-panel {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    overflow: visible !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .card, .kpi, .rec, .finding, .quote, .donut-card,
+  .matrix-cell, .highlight-box, .table-wrap, .cover-meta-item {
+    box-shadow: none !important;
+  }
+
+  .card, .highlight-box {
+    overflow: visible !important;
+  }
+
+  .card {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  .kpi, .finding, .rec, .quote, .matrix-cell, .donut-card,
+  tr, .content-list li, .progress-item {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  h1, h2, h3, h4, .section-head, .card-head {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  .tab-panel[data-panel^="inf-g"]::before,
+  .tab-panel[data-panel^="eval-g"]::before {
+    display: block !important;
+    font-weight: 800;
+    font-size: 0.95rem;
+    color: #0A1E3F;
+    padding: 0.4rem 0;
+    margin: 0.7rem 0 0.6rem;
+    border-bottom: 2px solid #F59E0B;
+  }
+  .tab-panel[data-panel="inf-g1"]::before  { content: "▸ Informe · Grupo 1"; }
+  .tab-panel[data-panel="inf-g2"]::before  { content: "▸ Informe · Grupo 2"; }
+  .tab-panel[data-panel="inf-g3"]::before  { content: "▸ Informe · Grupo 3"; }
+  .tab-panel[data-panel^="eval-g"]::before { border-color: #0EA5A5; }
+  .tab-panel[data-panel="eval-g1"]::before { content: "▸ Evaluación · Grupo 1"; }
+  .tab-panel[data-panel="eval-g2"]::before { content: "▸ Evaluación · Grupo 2"; }
+  .tab-panel[data-panel="eval-g3"]::before { content: "▸ Evaluación · Grupo 3"; }
+
+  .cover {
+    break-after: page !important;
+    page-break-after: always !important;
+    min-height: auto !important;
+  }
+
+  .footer {
+    break-before: auto !important;
+    page-break-before: auto !important;
+  }
+
+  .page-break {
+    break-before: auto !important;
+    page-break-before: auto !important;
+  }
+
+  .section        { padding: 0.4rem 0; }
+  .kpi .num       { font-size: 1.7rem; }
+  .kpi-grid       { gap: 0.6rem; }
+  .content-list li{ padding: 0.28rem 0 0.28rem 1.45rem; font-size: 0.88rem; }
+  p, li           { orphans: 2; widows: 2; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAVEGACIÓN ===================== -->
+<nav class="topnav">
+  <div class="nav-inner">
+    <div class="nav-brand"><span class="dot"></span>JEANTEX · 2026</div>
+    <div class="nav-links">
+      <a href="#portada">Portada</a>
+      <a href="#resumen">Resumen</a>
+      <a href="#programa-general">Programa General</a>
+      <a href="#liderazgo">Liderazgo</a>
+      <a href="#indicadores">Indicadores</a>
+      <a href="#ingles">Inglés</a>
+      <a href="#calderas">Calderas</a>
+      <a href="#teatro">Obra Teatral</a>
+      <a href="#conferencia">Conferencia</a>
+      <a href="#conclusiones">Conclusiones</a>
+    </div>
+    <button class="nav-print" onclick="window.print()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z"/></svg>
+      PDF
+    </button>
+  </div>
+</nav>
+
+<!-- ===================== PORTADA ===================== -->
+<header class="cover" id="portada">
+  <div class="cover-inner">
+    <div class="cover-logo">
+      <div class="mark">J</div>
+      <span class="name">JEANTEX S.A.</span>
+    </div>
+    <div class="cover-eyebrow">Recursos Humanos · Noviembre 2026</div>
+    <h1>Actividades de Capacitación y <span class="accent">Motivacionales</span> Año 2026</h1>
+    <p class="cover-subtitle">Programa General de Técnicas y Herramientas Gerenciales · Informe integral de ejecución, resultados y evaluación de impacto.</p>
+    <div class="cover-meta">
+      <div class="cover-meta-item">
+        <div class="label">Programas ejecutados</div>
+        <div class="value">6 iniciativas</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="label">Participaciones</div>
+        <div class="value">68 en formación</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="label">Inversión total</div>
+        <div class="value">$ 3.893,73</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="label">Satisfacción global</div>
+        <div class="value">Alta · 90%+</div>
+      </div>
+    </div>
+    <div class="cover-footer">
+      <span>Documento institucional · Uso interno</span>
+      <a href="#resumen" class="cover-scroll">
+        Explorar informe
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== RESUMEN EJECUTIVO ===================== -->
+<section class="section section-alt" id="resumen">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Panorama general</span>
+      <h2>Resumen ejecutivo 2026</h2>
+      <p>Visión consolidada del plan de capacitación y actividades motivacionales ejecutado por Jeantex S.A. durante el año 2026, con indicadores clave de cobertura, inversión y satisfacción.</p>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi reveal">
+        <div class="icon teal">📚</div>
+        <div class="num" data-count="6">0</div>
+        <div class="lbl">Programas ejecutados</div>
+      </div>
+      <div class="kpi reveal d1">
+        <div class="icon gold">👥</div>
+        <div class="num" data-count="68">0</div>
+        <div class="lbl">Participaciones en formación</div>
+      </div>
+      <div class="kpi reveal d2">
+        <div class="icon blue">💵</div>
+        <div class="num"><small>$</small><span data-count="3893.73">0</span></div>
+        <div class="lbl">Inversión total ejecutada</div>
+      </div>
+      <div class="kpi reveal d3">
+        <div class="icon green">⭐</div>
+        <div class="num" data-count="96.7">0<small>%</small></div>
+        <div class="lbl">Recomendación promedio</div>
+      </div>
+      <div class="kpi reveal d4">
+        <div class="icon purple">🏆</div>
+        <div class="num" data-count="19.5">0<small>/20</small></div>
+        <div class="lbl">Valoración del instructor</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card reveal">
+        <div class="card-head">
+          <div class="ic">🎯</div>
+          <div>
+            <h3>Objetivo del plan</h3>
+            <p>Fortalecer competencias gerenciales y el clima organizacional</p>
+          </div>
+        </div>
+        <p style="font-size:.92rem">Desarrollar competencias de liderazgo adaptativo, gestión por indicadores, comunicación efectiva y conocimiento técnico especializado en los mandos medios de Jeantex S.A., dotando a los colaboradores de herramientas conceptuales, relacionales y conductuales para optimizar la gestión de equipos, la resolución de problemas y el clima laboral.</p>
+        <div class="pill-list">
+          <span class="pill teal">Liderazgo adaptativo</span>
+          <span class="pill gold">KPIs · OKRs</span>
+          <span class="pill blue">Inglés práctico</span>
+          <span class="pill purple">Calderas y vapor</span>
+          <span class="pill teal">Cultura y valores</span>
+          <span class="pill gold">Salud mental</span>
+        </div>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-head">
+          <div class="ic">📊</div>
+          <div>
+            <h3>Programas y cobertura</h3>
+            <p>Distribución de participantes por iniciativa</p>
+          </div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Desarrollo de Liderazgo</span><span class="val">32</span></div>
+          <div class="progress-track"><div class="progress-fill teal" data-width="100"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Indicadores de Gestión</span><span class="val">22</span></div>
+          <div class="progress-track"><div class="progress-fill gold" data-width="69"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Inglés Práctico</span><span class="val">12</span></div>
+          <div class="progress-track"><div class="progress-fill blue" data-width="38"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Calderas y Generación de Vapor</span><span class="val">2</span></div>
+          <div class="progress-track"><div class="progress-fill purple" data-width="6"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Obra Teatral</span><span class="val">27 asistentes</span></div>
+          <div class="progress-track"><div class="progress-fill gold" data-width="100"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Conferencia Liderazgo Resiliente</span><span class="val">Asistencia general</span></div>
+          <div class="progress-track"><div class="progress-fill green" data-width="100"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROGRAMA GENERAL ===================== -->
+<section class="section" id="programa-general">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">01</span>
+      <h2>Programa general de actividades</h2>
+      <p>Detalle consolidado de fechas, participantes, instructores y costos de cada uno de los programas ejecutados durante el año 2026.</p>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:24%">Programa</th>
+            <th style="width:24%">Fechas de realización</th>
+            <th style="width:22%">Participantes</th>
+            <th style="width:14%">Instructor(a)</th>
+            <th style="width:16%">Costo total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Desarrollo de Liderazgo</strong><br><span style="font-size:.78rem;color:var(--gray-500)">Anexo 1</span></td>
+            <td>
+              <span class="badge teal">G1</span> 10 y 17 Sep 2026<br>
+              <span class="badge teal">G2</span> 24 Sep y 01 Oct 2026<br>
+              <span class="badge teal">G3</span> 13 y 15 Oct 2026
+            </td>
+            <td>
+              <strong>32 en total</strong><br>
+              <span style="font-size:.8rem">G1: 11 Coordinadores de Área<br>G2: 12 Gerentes y Coordinadores<br>G3: 9 Coordinadores y Administrativos</span>
+            </td>
+            <td>Lic. Estefanía Lugo</td>
+            <td><strong>$ 1.170</strong><br><span style="font-size:.75rem;color:var(--gray-500)">Programa $1.050 + Refrigerio $120</span></td>
+          </tr>
+          <tr>
+            <td><strong>Indicadores de Gestión</strong><br><span style="font-size:.78rem;color:var(--gray-500)">Anexo 2</span></td>
+            <td>
+              <span class="badge gold">G1</span> 11 Ago al 27 Oct 2026<br>
+              <span class="badge gold">G2</span> 20 y 22 Oct 2026
+            </td>
+            <td>
+              <strong>22 en total</strong><br>
+              <span style="font-size:.8rem">G1: 13 Coordinadores<br>G2: 5 Coordinadores + 4 Administrativos</span>
+            </td>
+            <td>Ing. Fernando Rosales</td>
+            <td><strong>$ 1.300</strong><br><span style="font-size:.75rem;color:var(--gray-500)">Programa $900 (3 meses) + Refrigerio $400</span></td>
+          </tr>
+          <tr>
+            <td><strong>Inglés Práctico</strong><br><span style="font-size:.78rem;color:var(--gray-500)">Anexo 3</span></td>
+            <td>13, 20 y 27 Ago 2026<br>03 Sep 2026</td>
+            <td><strong>12</strong> Coordinadores</td>
+            <td>Diego R. Barrios</td>
+            <td><strong>$ 480</strong><br><span style="font-size:.75rem;color:var(--gray-500)">Programa $400 + Refrigerio $80</span></td>
+          </tr>
+          <tr>
+            <td><strong>Curso de Calderas y Generación de Vapor</strong><br><span style="font-size:.78rem;color:var(--gray-500)">Anexo 4</span></td>
+            <td>Programa presencial</td>
+            <td>
+              <strong>2</strong> Coordinadores<br>
+              <span style="font-size:.8rem">C.I.E.A. · Calderas e Industriales Brivares C.A.</span>
+            </td>
+            <td>C.I.E.A. (Cámara Industriales del Estado Aragua)</td>
+            <td><strong>$ 380</strong><br><span style="font-size:.75rem;color:var(--gray-500)">Programa $320 + Viáticos $60</span></td>
+          </tr>
+          <tr>
+            <td><strong>Obra Teatral</strong><br><span style="font-size:.78rem;color:var(--gray-500)">"Mi Nombre es Esteban. El Inmigrante de Ararat" · Anexo 5</span></td>
+            <td>08 de Octubre 2026</td>
+            <td>
+              <strong>27 asistentes</strong><br>
+              <span style="font-size:.8rem">21 personal Jeantex + 6 por confirmar</span>
+            </td>
+            <td>—</td>
+            <td><strong>$ 563,73</strong><br><span style="font-size:.75rem;color:var(--gray-500)">Transporte $330 + Refrigerio $233,73</span></td>
+          </tr>
+          <tr>
+            <td><strong>Conferencia: Liderazgo Resiliente</strong><br><span style="font-size:.78rem;color:var(--gray-500)">Anexo 6</span></td>
+            <td>13 de Agosto 2026</td>
+            <td>Asistencia general</td>
+            <td>Lcda. Estefanía Lugo, Dra. Patricia Correa, Lic. Gustavo Romero</td>
+            <td><span style="font-size:.8rem;color:var(--green);font-weight:700">Sin costo</span><br><span style="font-size:.72rem;color:var(--gray-500)">Cortesía Cámara Industriales Aragua</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="highlight-box reveal" style="margin-top:2rem">
+      <h3>💰 Inversión total del programa 2026</h3>
+      <p>La inversión consolidada asciende a <strong>$ 3.893,73</strong>, distribuida en cuatro programas formativos y dos actividades motivacionales. Se destaca la Conferencia "Liderazgo Resiliente" como actividad sin costo, gracias a la cortesía de la Cámara de Industriales del Estado Aragua.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LIDERAZGO ===================== -->
+<section class="section section-alt" id="liderazgo">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">02</span>
+      <span class="eyebrow">Anexo 1</span>
+      <h2>Desarrollo de Liderazgo</h2>
+      <p>Programa estructurado en dos clases, ejecutado en tres cohortes con un total de 32 participantes. Incluye contenidos, informes de instructora y evaluación de impacto.</p>
+    </div>
+
+    <h3 style="margin-bottom:1.2rem;font-size:1.2rem" class="reveal">📖 Contenido del programa</h3>
+    <div class="grid-2">
+      <div class="card reveal">
+        <div class="card-head">
+          <div class="ic">1</div>
+          <div>
+            <h3>Clase 1 · Equipos y confianza</h3>
+            <p>Situación actual, identidad y acuerdos</p>
+          </div>
+        </div>
+        <ul class="content-list">
+          <li><strong>Situación Actual:</strong> La tecnología y el contexto humano · Retos de un equipo actualmente.</li>
+          <li><strong>Identidad de equipo</strong> (sentido de pertenencia, cohesión, propósito, rendimiento) Vs <strong>Identidad del individuo</strong> (quién soy, talentos, creencias, mecanismos de defensa).</li>
+          <li><strong>Elementos de equipo:</strong> Integración y balance (metas, motivación, frustraciones).</li>
+          <li><strong>Establecimiento de acuerdos:</strong> Planificación y coordinación (tarea, tiempo y trato).</li>
+          <li><strong>Momentos de verificación:</strong> Planificación, implementación y mantenimiento.</li>
+          <li><strong>Comunicación Vs Confianza:</strong> Pausa de revisión y consulta, manejo de quejas y reclamos, negociación y seguimiento.</li>
+          <li><strong>Plan de Acción:</strong> Flexible, con enfoque y atención específica.</li>
+          <li><strong>Proceso de Mentoría:</strong> Relación de confianza, transmisión de experiencia, enfoque de largo plazo y desarrollo de talento.</li>
+        </ul>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-head">
+          <div class="ic" style="background:var(--gold-soft);color:#b45309">2</div>
+          <div>
+            <h3>Clase 2 · Liderazgo adaptativo</h3>
+            <p>Ejecución estratégica y metodologías</p>
+          </div>
+        </div>
+        <ul class="content-list">
+          <li><strong>Adaptabilidad</strong> como competencia central del líder.</li>
+          <li><strong>Mapeo de resistencia:</strong> Fuerzas a favor y en contra, grupos afectados, postura actual, causa de rechazo y estrategia de mitigación.</li>
+          <li><strong>Análisis transaccional</strong> y los 3 estados del yo (niño, adulto, padre).</li>
+          <li><strong>Toma de decisiones oportuna:</strong> Autoobservación, renuncia a tener la razón, abrazar la vulnerabilidad, despegar propias etiquetas, cultivar compasión y escucha activa.</li>
+          <li><strong>Pensamiento lineal</strong> y <strong>pensamiento sistémico</strong>.</li>
+          <li><strong>Las 8 competencias de SHL:</strong> Liderar y decidir, apoyar y cooperar, actuar y presentar, analizar e interpretar, crear y definir, organizar y ejecutar, adaptar y afrontar, emprender y actuar.</li>
+          <li><strong>Metodología GROW:</strong> Meta, Realidad, Opciones y Compromiso.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin:2.5rem 0 1.2rem;font-size:1.2rem" class="reveal">📝 Informes de la instructora</h3>
+    <div class="tabs reveal" data-tabs="informes">
+      <button class="tab-btn active" data-tab="inf-g1">Grupo 1 · 11 participantes</button>
+      <button class="tab-btn" data-tab="inf-g2">Grupo 2 · 12 participantes</button>
+      <button class="tab-btn" data-tab="inf-g3">Grupo 3 · 9 participantes</button>
+    </div>
+
+    <div class="tab-panel active" data-panel="inf-g1">
+      <div class="card">
+        <div class="card-head">
+          <div class="ic">👥</div>
+          <div>
+            <h3>Informe de Desarrollo de Liderazgo — Grupo 1</h3>
+            <p>10 y 17 de septiembre de 2026 · 11 líderes y coordinadores de área</p>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-bottom:1.2rem">
+          <div>
+            <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Objetivo del módulo</p>
+            <p style="font-size:.88rem">Desarrollar competencias de liderazgo adaptativo y consciente en los mandos medios, dotándoles de herramientas conceptuales, relacionales y conductuales (observación conductual, modelo de 8 competencias de SHL y metodología GROW) para optimizar la gestión de equipos, la resolución de problemas y el clima laboral en articulación con las metas corporativas.</p>
+          </div>
+          <div>
+            <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Perfil del grupo</p>
+            <p style="font-size:.88rem">Participación plena y constante de los 11 convocados. Grupo predominantemente en el tercio superior de la etapa de adultez, con valiosa trayectoria operativa, experiencia acumulada y sólida madurez cronológica y laboral. Destacó la puntualidad impecable, asistencia perfecta y disposición receptiva hacia el aprendizaje andragógico.</p>
+          </div>
+        </div>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Dinámica de participación y hallazgos cualitativos</p>
+        <ul class="content-list" style="margin-bottom:1.2rem">
+          <li><strong>Orientación a la utilidad práctica:</strong> Interés genuino por traducir los recursos pedagógicos (audiovisual, dinámicas vivenciales, marcos teóricos) en herramientas de aplicación inmediata para sus entornos de trabajo y resolución de conflictos operativos.</li>
+          <li><strong>Consultas de alto valor:</strong> Inquietud recurrente sobre cómo transmitir e impactar efectivamente a sus equipos directos, evidenciando actitud proactiva y responsabilidad hacia la transferencia de conocimientos.</li>
+          <li><strong>Apertura al diagnóstico continuo:</strong> Excelente receptividad y madurez al evaluar críticamente el rendimiento, las dinámicas relacionales y la conducta de sus equipos.</li>
+        </ul>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Orientaciones y enfoques facilitados</p>
+        <ul class="content-list">
+          <li><strong>Respeto al ritmo de aprendizaje:</strong> Cada colaborador posee una curva de asimilación, procesamiento y ejecución individual, lo que exige flexibilidad metodológica del líder.</li>
+          <li><strong>Lectura del sistema de creencias:</strong> Identificar marcos mentales, motivaciones profundas e iniciativas de cada miembro del equipo, facilitando la detección de sesgos y la comprensión mutua.</li>
+          <li><strong>Escucha activa y consolidación de la confianza:</strong> Implementar la escucha empática no solo como técnica comunicacional, sino como pilar estratégico para afianzar la confianza interpersonal y la sinergia entre roles operativos y exigencias de supervisión.</li>
+        </ul>
+        <p style="font-size:.75rem;color:var(--gray-500);margin-top:1.2rem">📅 Fecha de emisión: 13 de octubre de 2026 · Firma: Lcda. Estefanía Lugo — Cambio y Mente</p>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="inf-g2">
+      <div class="card">
+        <div class="card-head">
+          <div class="ic">👥</div>
+          <div>
+            <h3>Informe de Desarrollo de Liderazgo — Grupo 2</h3>
+            <p>24 de septiembre y 01 de octubre de 2026 · 12 líderes y coordinadores de área</p>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-bottom:1.2rem">
+          <div>
+            <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Objetivo del módulo</p>
+            <p style="font-size:.88rem">Desarrollar competencias de liderazgo adaptativo y consciente en los mandos medios, integrando la observación conductual, el modelo de 8 competencias de SHL y la metodología GROW para optimizar la gestión de equipos, la resolución de problemas y el clima laboral.</p>
+          </div>
+          <div>
+            <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Perfil y características</p>
+            <p style="font-size:.88rem">Participación activa, dinámica y comprometida de los 12 convocados. Franja etaria joven-adulta (30–45 años) que aportó dinamismo, frescura analítica y orientación hacia la innovación. Excelente puntualidad, alta rigurosidad en notas, respeto estricto al proceso formativo y fluidez en dinámicas grupales.</p>
+          </div>
+        </div>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Contenidos y metodología desarrollada</p>
+        <ul class="content-list" style="margin-bottom:1.2rem">
+          <li><strong>Gestión basada en las personas:</strong> El cumplimiento de metas de producción y calidad depende de reconocer que cada colaborador posee límites, preferencias, fortalezas y diferencias individuales que deben gestionarse con inteligencia emocional.</li>
+          <li><strong>Balance entre tarea y metodología:</strong> Selección oportuna y estratégica de la metodología de abordaje, la personalidad de cada trabajador, el desarrollo de talentos y las iniciativas colaborativas.</li>
+          <li><strong>Evaluación, desarrollo y seguimiento:</strong> Aplicación de las 8 competencias esenciales del marco SHL.</li>
+          <li><strong>Esquema GROW</strong> (Goal, Reality, Options, Will) como herramienta estructurada para visualización de metas y resolución de nudos críticos.</li>
+          <li><strong>Respeto por la identidad del colaborador</strong> y fortalecimiento de la autoconciencia en el rol de supervisión.</li>
+        </ul>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Clima grupal y dinámica de interacción</p>
+        <ul class="content-list" style="margin-bottom:1.2rem">
+          <li><strong>Empatía y humildad organizacional:</strong> Interacción fluida, horizontal y abierta al contrastar experiencias previas en conducción de equipos.</li>
+          <li><strong>Apertura y transparencia:</strong> Exposición valiente de casos reales y complejos en un ambiente de confianza, orientado a la construcción conjunta de soluciones.</li>
+          <li><strong>Conciencia de relevo generacional:</strong> Internalización de que el nivel de desempeño y acompañamiento actual determina la calidad de los futuros líderes de área.</li>
+        </ul>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Conclusiones y recomendaciones</p>
+        <ul class="content-list">
+          <li><strong>Fortaleza principal:</strong> Elevada capacidad de autoanálisis, agilidad mental para el aprendizaje y sólida visión estratégica orientada al desarrollo sostenible del talento humano.</li>
+          <li><strong>Recomendación para RRHH:</strong> Institucionalizar espacios de seguimiento bimestral para la práctica supervisada del modelo GROW aplicada a casos reales de desempeño operativo.</li>
+          <li><strong>Nota logística:</strong> Optimizar o reforzar la ventilación del salón de conferencias para garantizar el confort óptimo en futuros espacios de aprendizaje.</li>
+        </ul>
+        <p style="font-size:.75rem;color:var(--gray-500);margin-top:1.2rem">📅 Fecha de emisión: 13 de octubre de 2026 · Firma: Lcda. Estefanía Lugo — Psicólogo C.I. V-19.245.885 · F.P.V. Nº 10.488 · RIF 19245885-0 · TLF 0414-4456288</p>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="inf-g3">
+      <div class="card">
+        <div class="card-head">
+          <div class="ic">👥</div>
+          <div>
+            <h3>Informe de Desarrollo de Liderazgo — Grupo 3</h3>
+            <p>13 y 15 de octubre de 2026 · Clase 1: 7 participantes · Clase 2: 9 participantes</p>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-bottom:1.2rem">
+          <div>
+            <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Objetivo del módulo</p>
+            <p style="font-size:.88rem">Desarrollar competencias de liderazgo adaptativo y consciente en los mandos medios de Jeantex S.A., integrando observación conductual, modelo de 8 competencias SHL y metodología GROW para optimizar gestión de equipos, resolución de problemas y clima laboral.</p>
+          </div>
+          <div>
+            <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Perfil y características</p>
+            <p style="font-size:.88rem">Tercera cohorte configurada como el grupo más reducido del ciclo formativo, con flujo constante de 7 a 9 colaboradores. A pesar del tamaño menor, exhibió una dinámica participativa de altísima cohesión. Registro impecable de horarios y participación superior a la expectativa inicial.</p>
+          </div>
+        </div>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Contenidos y metodología desarrollada</p>
+        <ul class="content-list" style="margin-bottom:1.2rem">
+          <li><strong>Disposición total hacia la práctica:</strong> Cada integrante desarrolló la totalidad de los ejercicios con apertura, proactividad y rigor conceptual, llevando los modelos SHL y GROW a simulaciones reales de su entorno operativo.</li>
+          <li><strong>Intervenciones de alto valor colaborativo:</strong> Análisis críticos, vivencias de planta y reflexiones orientadas a la construcción conjunta del aprendizaje y la co-creación de soluciones organizacionales.</li>
+          <li><strong>Clima de respeto y escucha activa:</strong> Ambiente caracterizado por respeto mutuo, estímulo recíproco y apertura a la retroalimentación constructiva entre pares y hacia la facilitación.</li>
+        </ul>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.3rem">Clima grupal y dinámica de interacción</p>
+        <ul class="content-list">
+          <li>El desempeño demostrado ratifica que el tamaño reducido de una cohorte, lejos de limitar el alcance, puede potenciarse para generar vivencias de aprendizaje de alto impacto relacional, fortaleciendo la cohesión intergrupal y la autoconfianza profesional.</li>
+          <li>Variabilidad generacional con un <strong>90% masculino</strong>, factor que evidencia competencias de adaptabilidad, responsabilidad y compromiso en distintas etapas evolutivas con la empresa y los procesos personales.</li>
+          <li>El aprendizaje no mide edades sino disposición y flexibilidad para lograr permanencia en el tiempo.</li>
+        </ul>
+        <p style="font-size:.75rem;color:var(--gray-500);margin-top:1.2rem">📅 Fecha de emisión: 22 de octubre de 2026 · Firma: Lcda. Estefanía Lugo</p>
+      </div>
+    </div>
+
+    <h3 style="margin:2.5rem 0 1.2rem;font-size:1.2rem" class="reveal">📊 Evaluaciones de impacto por grupo</h3>
+    <div class="tabs reveal" data-tabs="evaluaciones">
+      <button class="tab-btn active" data-tab="eval-g1">Grupo 1</button>
+      <button class="tab-btn" data-tab="eval-g2">Grupo 2</button>
+      <button class="tab-btn" data-tab="eval-g3">Grupo 3</button>
+    </div>
+
+    <div class="tab-panel active" data-panel="eval-g1">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-head">
+            <div class="ic">1</div>
+            <div><h3>Indicadores de acuerdo</h3><p>Percepción de los participantes</p></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Metodología utilizada</span><span class="val">82.3%</span></div>
+            <div class="progress-track"><div class="progress-fill teal" data-width="82.3"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Aplica para desarrollo de habilidades gerenciales</span><span class="val">65.0%</span></div>
+            <div class="progress-track"><div class="progress-fill teal" data-width="65"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Contenido adecuado</span><span class="val">66.6%</span></div>
+            <div class="progress-track"><div class="progress-fill gold" data-width="66.6"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Cumplimiento de objetivos</span><span class="val">91.0%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="91"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Logística empleada</span><span class="val">78.7%</span></div>
+            <div class="progress-track"><div class="progress-fill gold" data-width="78.7"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Cumplió expectativas el entrenamiento</span><span class="val">93.7%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="93.7"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Instructor</span><span class="val">99.0%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="99"></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="ic" style="background:var(--gold-soft);color:#b45309">★</div>
+            <div><h3>Puntuación promedio (1 al 20)</h3><p>Valoración global del programa</p></div>
+          </div>
+          <div class="donut-grid" style="grid-template-columns:1fr">
+            <div class="donut-card" style="border:none;padding:.5rem">
+              <div class="donut" style="background:conic-gradient(var(--teal) 0% 96%, var(--gray-100) 96% 100%)">
+                <div class="inner">19.2<small>/ 20 · 96%</small></div>
+              </div>
+              <div class="title">Entrenamiento recibido</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:1rem;margin-top:1rem">
+            <div style="flex:1;text-align:center;padding:1rem;background:var(--gray-50);border-radius:12px">
+              <div style="font-size:1.6rem;font-weight:900;color:var(--navy)">19.5</div>
+              <div style="font-size:.72rem;color:var(--gray-500);font-weight:600">Instructor · 97.5%</div>
+            </div>
+            <div style="flex:1;text-align:center;padding:1rem;background:var(--gray-50);border-radius:12px">
+              <div style="font-size:1.6rem;font-weight:900;color:var(--navy)">19.4</div>
+              <div style="font-size:.72rem;color:var(--gray-500);font-weight:600">Temas · 97.0%</div>
+            </div>
+          </div>
+          <div class="highlight-box" style="margin-top:1.2rem;padding:1.2rem">
+            <h3 style="font-size:1rem;margin-bottom:.2rem">🎯 Efecto multiplicador</h3>
+            <p style="font-size:.85rem">El <strong>100%</strong> de los participantes recomienda el programa. Evaluación del entrenamiento realizada por el 100% de los asistentes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="eval-g2">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-head">
+            <div class="ic">2</div>
+            <div><h3>Indicadores de acuerdo</h3><p>Percepción de los participantes</p></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Metodología utilizada</span><span class="val">85.5%</span></div>
+            <div class="progress-track"><div class="progress-fill teal" data-width="85.5"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Aplica para desarrollo de habilidades gerenciales</span><span class="val">96.8%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="96.8"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Contenido adecuado</span><span class="val">55.0%</span></div>
+            <div class="progress-track"><div class="progress-fill gold" data-width="55"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Cumplimiento de objetivos</span><span class="val">80.0%</span></div>
+            <div class="progress-track"><div class="progress-fill teal" data-width="80"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Logística empleada</span><span class="val">70.9%</span></div>
+            <div class="progress-track"><div class="progress-fill gold" data-width="70.9"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Cumplió expectativas el entrenamiento</span><span class="val">92.8%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="92.8"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Instructor</span><span class="val">100.0%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="100"></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="ic" style="background:var(--gold-soft);color:#b45309">★</div>
+            <div><h3>Puntuación promedio (1 al 20)</h3><p>Valoración global del programa</p></div>
+          </div>
+          <div class="donut-grid" style="grid-template-columns:1fr">
+            <div class="donut-card" style="border:none;padding:.5rem">
+              <div class="donut" style="background:conic-gradient(var(--teal) 0% 97%, var(--gray-100) 97% 100%)">
+                <div class="inner">19.4<small>/ 20 · 97%</small></div>
+              </div>
+              <div class="title">Entrenamiento recibido</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:1rem;margin-top:1rem">
+            <div style="flex:1;text-align:center;padding:1rem;background:var(--gray-50);border-radius:12px">
+              <div style="font-size:1.6rem;font-weight:900;color:var(--navy)">19.7</div>
+              <div style="font-size:.72rem;color:var(--gray-500);font-weight:600">Instructor · 98.5%</div>
+            </div>
+            <div style="flex:1;text-align:center;padding:1rem;background:var(--gray-50);border-radius:12px">
+              <div style="font-size:1.6rem;font-weight:900;color:var(--navy)">18.3</div>
+              <div style="font-size:.72rem;color:var(--gray-500);font-weight:600">Temas · 91.5%</div>
+            </div>
+          </div>
+          <div class="highlight-box" style="margin-top:1.2rem;padding:1.2rem">
+            <h3 style="font-size:1rem;margin-bottom:.2rem">🎯 Efecto multiplicador</h3>
+            <p style="font-size:.85rem">El <strong>90%</strong> recomienda totalmente el programa y el <strong>10%</strong> parcialmente. Evaluación del entrenamiento realizada por el 100%.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:1.25rem">
+        <div class="card-head">
+          <div class="ic" style="background:var(--purple-soft);color:#6d28d9">📚</div>
+          <div><h3>Evaluación de contenidos por módulo</h3><p>Escala sobre 5 puntos</p></div>
+        </div>
+        <div class="grid-2">
+          <div style="text-align:center;padding:1.2rem;background:var(--gray-50);border-radius:14px">
+            <div style="font-size:2.4rem;font-weight:900;color:var(--navy);letter-spacing:-.03em">4.6<span style="font-size:1rem;color:var(--gray-500)">/5</span></div>
+            <div style="font-weight:700;color:var(--navy);margin-top:.3rem">Módulo I</div>
+            <div style="font-size:.78rem;color:var(--gray-500)">Situación actual · Identidad de equipo · Integración y balance · Acuerdos y planificación · Comunicación vs confianza · Plan de acción · Mentoría</div>
+          </div>
+          <div style="text-align:center;padding:1.2rem;background:var(--gray-50);border-radius:14px">
+            <div style="font-size:2.4rem;font-weight:900;color:var(--navy);letter-spacing:-.03em">4.4<span style="font-size:1rem;color:var(--gray-500)">/5</span></div>
+            <div style="font-weight:700;color:var(--navy);margin-top:.3rem">Módulo II</div>
+            <div style="font-size:.78rem;color:var(--gray-500)">Liderazgo adaptativo · Ejecución estratégica · Mapeo de resistencia · Análisis transaccional · Toma de decisiones · Pensamiento estratégico · Competencias SHL · Metodología GROW</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="eval-g3">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-head">
+            <div class="ic">3</div>
+            <div><h3>Indicadores de acuerdo</h3><p>Percepción de los participantes</p></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Metodología utilizada</span><span class="val">81.0%</span></div>
+            <div class="progress-track"><div class="progress-fill teal" data-width="81"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Aplica para desarrollo de habilidades gerenciales</span><span class="val">89.3%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="89.3"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Logística empleada</span><span class="val">85.1%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="85.1"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Cumplió expectativas el entrenamiento</span><span class="val">92.5%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="92.5"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Instructor</span><span class="val">100.0%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="100"></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="ic" style="background:var(--gold-soft);color:#b45309">★</div>
+            <div><h3>Puntuación promedio (1 al 20)</h3><p>Valoración global del programa</p></div>
+          </div>
+          <div class="donut-grid" style="grid-template-columns:1fr">
+            <div class="donut-card" style="border:none;padding:.5rem">
+              <div class="donut" style="background:conic-gradient(var(--teal) 0% 98%, var(--gray-100) 98% 100%)">
+                <div class="inner">19.6<small>/ 20 · 98%</small></div>
+              </div>
+              <div class="title">Entrenamiento recibido</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:1rem;margin-top:1rem">
+            <div style="flex:1;text-align:center;padding:1rem;background:var(--gray-50);border-radius:12px">
+              <div style="font-size:1.6rem;font-weight:900;color:var(--navy)">19.7</div>
+              <div style="font-size:.72rem;color:var(--gray-500);font-weight:600">Instructor · 98.5%</div>
+            </div>
+            <div style="flex:1;text-align:center;padding:1rem;background:var(--gray-50);border-radius:12px">
+              <div style="font-size:1.6rem;font-weight:900;color:var(--navy)">19.7</div>
+              <div style="font-size:.72rem;color:var(--gray-500);font-weight:600">Temas · 98.5%</div>
+            </div>
+          </div>
+          <div class="highlight-box" style="margin-top:1.2rem;padding:1.2rem">
+            <h3 style="font-size:1rem;margin-bottom:.2rem">🎯 Efecto multiplicador</h3>
+            <p style="font-size:.85rem">El <strong>100%</strong> recomienda el programa. Evaluación del entrenamiento realizada por el 100% de los asistentes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:1.25rem">
+        <div class="card-head">
+          <div class="ic" style="background:var(--purple-soft);color:#6d28d9">📚</div>
+          <div><h3>Evaluación de contenidos por módulo</h3><p>Escala sobre 5 puntos</p></div>
+        </div>
+        <div class="grid-2">
+          <div style="text-align:center;padding:1.2rem;background:var(--gray-50);border-radius:14px">
+            <div style="font-size:2.4rem;font-weight:900;color:var(--navy);letter-spacing:-.03em">4.5<span style="font-size:1rem;color:var(--gray-500)">/5</span></div>
+            <div style="font-weight:700;color:var(--navy);margin-top:.3rem">Módulo I</div>
+            <div style="font-size:.78rem;color:var(--gray-500)">Situación actual · Identidad de equipo · Integración y balance · Acuerdos y planificación · Comunicación vs confianza · Plan de acción · Mentoría</div>
+          </div>
+          <div style="text-align:center;padding:1.2rem;background:var(--gray-50);border-radius:14px">
+            <div style="font-size:2.4rem;font-weight:900;color:var(--navy);letter-spacing:-.03em">4.5<span style="font-size:1rem;color:var(--gray-500)">/5</span></div>
+            <div style="font-weight:700;color:var(--navy);margin-top:.3rem">Módulo II</div>
+            <div style="font-size:.78rem;color:var(--gray-500)">Liderazgo adaptativo · Ejecución estratégica · Mapeo de resistencia · Análisis transaccional · Toma de decisiones · Pensamiento estratégico · Competencias SHL · Metodología GROW</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INDICADORES DE GESTIÓN ===================== -->
+<section class="section" id="indicadores">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num gold">03</span>
+      <span class="eyebrow">Anexo 2</span>
+      <h2>Indicadores de Gestión</h2>
+      <p>Programa de KPIs, KBIs y OKRs ejecutado en dos cohortes con 22 participantes. Incluye contenidos diferenciados, evaluación consolidada, diagnóstico de brechas y plan de acción.</p>
+    </div>
+
+    <h3 style="margin-bottom:1.2rem;font-size:1.2rem" class="reveal">📖 Contenido del programa</h3>
+    <div class="grid-2">
+      <div class="card reveal">
+        <div class="card-head">
+          <div class="ic" style="background:var(--gold-soft);color:#b45309">G1</div>
+          <div>
+            <h3>Grupo 1 · 13 Coordinadores</h3>
+            <p>Del 11 de agosto al 27 de octubre de 2026</p>
+          </div>
+        </div>
+        <ul class="content-list">
+          <li><strong>Unidad I:</strong> Control Estadístico de Proceso.</li>
+          <li><strong>Unidad II:</strong> Cartas de Control (Shewhart).</li>
+          <li><strong>Unidad III:</strong> Índices de Capacidad Potencial y Real: Cp y Cpk.</li>
+          <li><strong>Unidad IV:</strong> Indicadores Claves de Gestión: Datos, Métricas, KPIs y OKRs.</li>
+          <li><strong>Unidad V:</strong> Filosofías Lean Manufacturing y Six Sigma (PHVA-DMCAI).</li>
+          <li><strong>Unidad VI:</strong> Herramientas de Calidad: ISO 9001:2026, SIPOC.</li>
+          <li><strong>Unidad VII:</strong> Indicador OEE (Overall Evaluation Equipment).</li>
+          <li><strong>Unidad VIII:</strong> Indicadores OKRs y KBIs (Objetivos y Comportamientos).</li>
+          <li><strong>Unidad IX:</strong> Trabajo Práctico Aplicado a Proceso — KAIZEN.</li>
+        </ul>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-head">
+          <div class="ic" style="background:var(--gold-soft);color:#b45309">G2</div>
+          <div>
+            <h3>Grupo 2 · 9 participantes</h3>
+            <p>20 y 22 de octubre de 2026 · 5 Coordinadores + 4 Administrativos</p>
+          </div>
+        </div>
+        <ul class="content-list">
+          <li><strong>Unidad I:</strong> Indicadores Claves de Gestión: Datos, Métricas y KPIs.</li>
+          <li><strong>Unidad II:</strong> Filosofías Lean Manufacturing y Six Sigma (PHVA-DMCAI).</li>
+          <li><strong>Unidad III:</strong> Short Kaizen. Mejora Continua. Técnica Lean.</li>
+          <li><strong>Unidad IV:</strong> Herramientas de Calidad: Técnicas FODA y CAME.</li>
+          <li><strong>Unidad V:</strong> Indicador OEE (Overall Evaluation Equipment).</li>
+          <li><strong>Unidad VI:</strong> Indicadores OKRs y KBIs (Objetivos y Comportamientos).</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin:2.5rem 0 1.2rem;font-size:1.2rem" class="reveal">📈 Resultados de la evaluación consolidada</h3>
+    <div class="kpi-grid reveal">
+      <div class="kpi">
+        <div class="icon teal">🧠</div>
+        <div class="num" data-count="100">0<small>%</small></div>
+        <div class="lbl">Conoce el propósito de la cultura de medición</div>
+      </div>
+      <div class="kpi">
+        <div class="icon gold">📊</div>
+        <div class="num" data-count="52.3">0<small>%</small></div>
+        <div class="lbl">Madurez percibida del modelo</div>
+      </div>
+      <div class="kpi">
+        <div class="icon blue">🆕</div>
+        <div class="num" data-count="68.6">0<small>%</small></div>
+        <div class="lbl">No había recibido este tipo de información antes</div>
+      </div>
+      <div class="kpi">
+        <div class="icon green">✅</div>
+        <div class="num" data-count="100">0<small>%</small></div>
+        <div class="lbl">Considera viable la aplicación en su área</div>
+      </div>
+      <div class="kpi">
+        <div class="icon purple">💪</div>
+        <div class="num" data-count="70">0<small>%</small></div>
+        <div class="lbl">Se siente capacitado para aplicar KPIs y KBIs</div>
+      </div>
+      <div class="kpi">
+        <div class="icon coral">⭐</div>
+        <div class="num" data-count="90">0<small>%</small></div>
+        <div class="lbl">Valoración superior de instructor y logística</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card reveal">
+        <div class="card-head">
+          <div class="ic">1</div>
+          <div><h3>Propósito de la cultura de medición</h3><p>Porcentaje de menciones sobre el total · 22 participantes</p></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Eficiencia, optimización de recursos y rendición de cuentas</span><span class="val">64.8%</span></div>
+          <div class="progress-track"><div class="progress-fill teal" data-width="64.8"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Mejora continua y análisis de resultados</span><span class="val">14.5%</span></div>
+          <div class="progress-track"><div class="progress-fill gold" data-width="14.5"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Conocer el desempeño real en tiempo real</span><span class="val">13.2%</span></div>
+          <div class="progress-track"><div class="progress-fill blue" data-width="13.2"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Transformar la gestión en hechos y evidencias</span><span class="val">7.5%</span></div>
+          <div class="progress-track"><div class="progress-fill purple" data-width="7.5"></div></div>
+        </div>
+        <p style="font-size:.8rem;color:var(--gray-500);margin-top:1rem;font-style:italic">Lectura: el propósito dominante es la eficiencia y rendición de cuentas (64.8%). La visibilidad en tiempo real (13.2%) y la transformación basada en evidencias (7.5%) son los aspectos menos internalizados y representan oportunidad de refuerzo.</p>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-head">
+          <div class="ic">2·3</div>
+          <div><h3>Percepción del modelo y exposición previa</h3><p>Madurez percibida y contacto anterior con indicadores</p></div>
+        </div>
+        <div class="grid-2" style="gap:1rem">
+          <div class="donut-card" style="border:none;padding:.5rem">
+            <div class="donut" style="background:conic-gradient(var(--gold) 0% 52.3%, #fbbf24 52.3% 73.2%, var(--gray-300) 73.2% 100%)">
+              <div class="inner">52.3<small>Existe</small></div>
+            </div>
+            <div class="title">¿Existe el propósito?</div>
+            <div class="desc">Parcialmente 20.9% · No existe 26.8%</div>
+          </div>
+          <div class="donut-card" style="border:none;padding:.5rem">
+            <div class="donut" style="background:conic-gradient(var(--coral) 0% 68.6%, var(--green) 68.6% 100%)">
+              <div class="inner">68.6<small>No recibió</small></div>
+            </div>
+            <div class="title">¿Recibió información antes?</div>
+            <div class="desc">Sí 31.4%</div>
+          </div>
+        </div>
+        <p style="font-size:.8rem;color:var(--gray-500);margin-top:1rem;font-style:italic">26.8% considera que el propósito no existe: brecha de comunicación interna. El taller es el primer contacto formal con indicadores para 7 de cada 10 participantes.</p>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:1.5rem">
+      <div class="card reveal">
+        <div class="card-head">
+          <div class="ic">5</div>
+          <div><h3>Competencia percibida</h3><p>Autopercepción para aplicar KPIs y KBIs</p></div>
+        </div>
+        <div class="donut" style="background:conic-gradient(var(--blue) 0% 70%, var(--gray-200) 70% 100%);margin:0 auto 1rem">
+          <div class="inner">70<small>Sí capacitado</small></div>
+        </div>
+        <p style="font-size:.82rem;color:var(--gray-500);text-align:center">El 30% declara no estar aún en condiciones de aplicarlo: brecha a cerrar con práctica por área.</p>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-head">
+          <div class="ic">7·8</div>
+          <div><h3>Satisfacción</h3><p>Valoración nivel superior</p></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Instructor</span><span class="val">90%</span></div>
+          <div class="progress-track"><div class="progress-fill green" data-width="90"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Logística</span><span class="val">90%</span></div>
+          <div class="progress-track"><div class="progress-fill green" data-width="90"></div></div>
+        </div>
+        <p style="font-size:.8rem;color:var(--gray-500);margin-top:1rem;font-style:italic">Valoración alta y homogénea en ambos ítems; ninguna respuesta por debajo de «bien/adecuada».</p>
+      </div>
+    </div>
+
+    <div class="card reveal" style="margin-top:1.5rem">
+      <div class="card-head">
+        <div class="ic" style="background:var(--purple-soft);color:#6d28d9">◎</div>
+        <div><h3>Perfil de madurez del taller</h3><p>Índices compuestos sobre 100 · Cohorte de 22 participantes</p></div>
+      </div>
+      <div class="grid-2-1">
+        <div style="display:grid;place-items:center">
+          <svg id="radarChart" viewBox="0 0 420 420" style="width:100%;max-width:420px"></svg>
+        </div>
+        <div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Conocimiento</span><span class="val">100%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="100"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Viabilidad</span><span class="val">100%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="100"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Exposición previa</span><span class="val">31.4%</span></div>
+            <div class="progress-track"><div class="progress-fill coral" data-width="31.4"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Competencia</span><span class="val">70%</span></div>
+            <div class="progress-track"><div class="progress-fill gold" data-width="70"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Satisfacción</span><span class="val">90%</span></div>
+            <div class="progress-track"><div class="progress-fill teal" data-width="90"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-head"><span class="name">Madurez percibida</span><span class="val">52.3%</span></div>
+            <div class="progress-track"><div class="progress-fill blue" data-width="52.3"></div></div>
+          </div>
+          <p style="font-size:.8rem;color:var(--gray-500);margin-top:1rem;font-style:italic">Lectura: la mayor oportunidad clara está en exposición previa (31.4%) y madurez percibida (52.3%).</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin:2.5rem 0 1.2rem;font-size:1.2rem" class="reveal">🔍 Diagnóstico del instructor — Brechas identificadas</h3>
+
+    <div class="card reveal">
+      <div class="card-head">
+        <div class="ic" style="background:var(--coral-soft);color:#b91c1c">01</div>
+        <div><h3>Gestión de la urgencia sin criterios de prioridad</h3><p>Matriz de Eisenhower — dónde opera el equipo vs. dónde debería</p></div>
+      </div>
+      <div class="matrix">
+        <div class="matrix-cell q1">
+          <span class="tag">Actual</span>
+          <div class="q">Q1 · Urgente + Importante</div>
+          <h4>Hacer ya</h4>
+          <p>Incendios, crisis, fechas límite. <strong>El equipo opera aquí la mayor parte del tiempo.</strong></p>
+        </div>
+        <div class="matrix-cell q2">
+          <span class="tag">Objetivo</span>
+          <div class="q">Q2 · No urgente + Importante</div>
+          <h4>Planificar</h4>
+          <p>Estrategia, crecimiento, KPIs. <strong>El espacio que debe ganar terreno.</strong></p>
+        </div>
+        <div class="matrix-cell q3">
+          <span class="tag">Actual</span>
+          <div class="q">Q3 · Urgente + No importante</div>
+          <h4>Delegar</h4>
+          <p>Interrupciones, reuniones. <strong>Consume energía sin agregar valor.</strong></p>
+        </div>
+        <div class="matrix-cell q4">
+          <div class="q">Q4 · No urgente + No importante</div>
+          <h4>Eliminar</h4>
+          <p>Distracciones. <strong>Poco presente, pero siempre al acecho.</strong></p>
+        </div>
+      </div>
+      <p style="font-size:.82rem;color:var(--gray-500);margin-top:1rem;font-style:italic">Lectura: sin criterios explícitos de priorización, la urgencia desplaza a la estrategia. Requiere reforzamiento práctico y definitorio por su impacto en la entrega de tareas y resultados.</p>
+    </div>
+
+    <div class="card reveal" style="margin-top:1.25rem">
+      <div class="card-head">
+        <div class="ic" style="background:var(--gold-soft);color:#b45309">02</div>
+        <div><h3>Gestión del tiempo y disciplina de planificación</h3><p>Diagnóstico: «el tiempo no alcanza por múltiples ocupaciones»</p></div>
+      </div>
+      <div class="compare">
+        <div class="compare-title">Situación actual</div>
+        <div class="compare-track">
+          <div class="compare-seg red" style="width:70%">Reactivo · 70%</div>
+          <div class="compare-seg green" style="width:30%">Planificado · 30%</div>
+        </div>
+      </div>
+      <div class="compare">
+        <div class="compare-title">Situación objetivo</div>
+        <div class="compare-track">
+          <div class="compare-seg red" style="width:30%">Reactivo · 30%</div>
+          <div class="compare-seg green" style="width:70%">Planificado · 70%</div>
+        </div>
+      </div>
+      <p style="font-size:.82rem;color:var(--gray-500);margin-top:.5rem;font-style:italic">Lectura: la jornada se consume en la eventualidad. Falta disciplina para planear el día, bloquear tiempo protegido y controlar el avance. El resultado es sensación de saturación sin valor de crecimiento agregado.</p>
+    </div>
+
+    <div class="card reveal" style="margin-top:1.25rem">
+      <div class="card-head">
+        <div class="ic" style="background:var(--purple-soft);color:#6d28d9">03</div>
+        <div><h3>Adopción tecnológica y proactividad</h3><p>Uso de métricas, KPIs y OKRs para focalizar mejoras (escala sobre 10)</p></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-head"><span class="name">Uso de KPIs</span><span class="val">3.0 / 10</span></div>
+        <div class="progress-track"><div class="progress-fill coral" data-width="30"></div></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-head"><span class="name">Uso de OKRs</span><span class="val">2.0 / 10</span></div>
+        <div class="progress-track"><div class="progress-fill coral" data-width="20"></div></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-head"><span class="name">Análisis de métricas</span><span class="val">2.5 / 10</span></div>
+        <div class="progress-track"><div class="progress-fill coral" data-width="25"></div></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-head"><span class="name">Proactividad en mejoras</span><span class="val">3.0 / 10</span></div>
+        <div class="progress-track"><div class="progress-fill gold" data-width="30"></div></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-head"><span class="name">Motivación para innovar</span><span class="val">3.5 / 10</span></div>
+        <div class="progress-track"><div class="progress-fill gold" data-width="35"></div></div>
+      </div>
+      <p style="font-size:.82rem;color:var(--gray-500);margin-top:.5rem;font-style:italic">Lectura: existen herramientas disponibles, pero se usan poco para interpretar métricas y focalizar mejoras. La brecha no es de acceso tecnológico, sino de criterio analítico y motivación proactiva.</p>
+    </div>
+
+    <h3 style="margin:2.5rem 0 1.2rem;font-size:1.2rem" class="reveal">💬 Valoración cualitativa</h3>
+    <div class="card reveal">
+      <div class="card-head">
+        <div class="ic" style="background:var(--teal-soft);color:#0d7a7a">✓</div>
+        <div><h3>Lean Manufacturing, Six Sigma y voz de los participantes</h3><p>Interés total y aportes abiertos al cierre del taller</p></div>
+      </div>
+      <div class="kpi-grid" style="grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin-bottom:1.5rem">
+        <div class="kpi" style="padding:1rem">
+          <div class="num" style="font-size:1.8rem">100<small>%</small></div>
+          <div class="lbl">Interés en Lean & Six Sigma</div>
+        </div>
+        <div class="kpi" style="padding:1rem">
+          <div class="num" style="font-size:1.8rem">22</div>
+          <div class="lbl">Casos individuales presentados</div>
+        </div>
+        <div class="kpi" style="padding:1rem">
+          <div class="num" style="font-size:1.8rem">Alto</div>
+          <div class="lbl">Potencial de aplicación</div>
+        </div>
+        <div class="kpi" style="padding:1rem">
+          <div class="num" style="font-size:1.8rem">Fase 2</div>
+          <div class="lbl">Espacio para profundizar</div>
+        </div>
+      </div>
+      <p style="font-size:.88rem;margin-bottom:1rem">Las técnicas de Lean Manufacturing y Six Sigma despertaron un interés total en los participantes. Cada uno evidenció su comprensión mediante la presentación de casos individuales vinculados a su área de procesos. Señal positiva: existe disposición para adoptar marcos de mejora estructurados, siempre que se conecten con problemas reales del puesto y se acompañen de práctica guiada.</p>
+      <div class="quotes">
+        <div class="quote">Excelente el taller, muy práctico.<span class="author">Participante</span></div>
+        <div class="quote">Trabajo práctico, estudios de caso, muy aplicable en todo.<span class="author">Participante</span></div>
+        <div class="quote">El taller proporciona lineamientos concretos para ir de una gestión reactiva a una gestión proactiva.<span class="author">Participante</span></div>
+        <div class="quote">El reto más importante es producir un cambio en el personal de planta.<span class="author">Participante</span></div>
+        <div class="quote">Es preferible medir KPIs de horas de trabajo efectivas vs. una cultura de reuniones.<span class="author">Participante</span></div>
+        <div class="quote">Es importante el material de apoyo.<span class="author">Participante</span></div>
+      </div>
+    </div>
+
+    <h3 style="margin:2.5rem 0 1.2rem;font-size:1.2rem" class="reveal">📌 Hallazgos principales</h3>
+    <div class="findings reveal">
+      <div class="finding good">
+        <div class="ic">✅</div>
+        <div><h4>Aceptación unánime</h4><p>El 100% conoce el propósito y considera viable la aplicación. Existe disposición cultural para instalar el modelo.</p></div>
+      </div>
+      <div class="finding warn">
+        <div class="ic">⚠️</div>
+        <div><h4>Punto de partida, no de continuidad</h4><p>El 68.6% no había recibido información previa y el 26.8% percibe que el propósito no existe: la cultura de medición se está instalando, no consolidando.</p></div>
+      </div>
+      <div class="finding alert">
+        <div class="ic">📉</div>
+        <div><h4>Brecha de competencia aplicada</h4><p>El 70% se siente capacitado, pero un 30% no lo está y el 100% pide profundizar. El conocimiento conceptual existe, pero falta trasladarlo al puesto.</p></div>
+      </div>
+      <div class="finding good">
+        <div class="ic">🎯</div>
+        <div><h4>Foco del propósito bien alineado</h4><p>El 64.8% asocia el objetivo a eficiencia, optimización de recursos y rendición de cuentas, seguido por mejora continua (14.5%) y desempeño en tiempo real (13.2%).</p></div>
+      </div>
+      <div class="finding good">
+        <div class="ic">⭐</div>
+        <div><h4>Satisfacción alta y homogénea</h4><p>El instructor y la logística obtienen 90% de valoración superior; ninguna respuesta por debajo de «bien/adecuada».</p></div>
+      </div>
+      <div class="finding alert">
+        <div class="ic">🔺</div>
+        <div><h4>Tres brechas transversales</h4><p>Urgencia sin priorización (Eisenhower), gestión del tiempo reactiva y baja adopción de herramientas tecnológicas para métricas.</p></div>
+      </div>
+    </div>
+
+    <h3 style="margin:2.5rem 0 1.2rem;font-size:1.2rem" class="reveal">🚀 Plan de acción y recomendaciones</h3>
+    <div class="rec-grid">
+      <div class="rec reveal">
+        <div class="num">1</div>
+        <h4>Fase 2 aplicada</h4>
+        <p>Taller práctico por área donde cada líder construya 3–5 KPIs y 2–3 KBIs propios, con datos reales.</p>
+      </div>
+      <div class="rec reveal d1">
+        <div class="num">2</div>
+        <h4>Taller de Eisenhower + gestión del tiempo</h4>
+        <p>Priorización explícita y bloqueo de tiempo protegido en la agenda semanal.</p>
+      </div>
+      <div class="rec reveal d2">
+        <div class="num">3</div>
+        <h4>Programa de adopción tecnológica</h4>
+        <p>Dashboards, OKRs y análisis de métricas con acompañamiento por área.</p>
+      </div>
+      <div class="rec reveal">
+        <div class="num">4</div>
+        <h4>Plan de comunicación interna</h4>
+        <p>Explicar qué es el modelo, por qué se mide y cómo impacta en cada rol, para cerrar la brecha del 26.8% que percibe que el propósito no existe.</p>
+      </div>
+      <div class="rec reveal d1">
+        <div class="num">5</div>
+        <h4>Piloto medible</h4>
+        <p>Tablero de indicadores en un área durante 60–90 días y socialización como caso de éxito.</p>
+      </div>
+      <div class="rec reveal d2">
+        <div class="num">6</div>
+        <h4>Comunidad Lean & Six Sigma</h4>
+        <p>Capitalizar el interés total con casos individuales por área y proyectos de mejora.</p>
+      </div>
+    </div>
+
+    <div class="highlight-box reveal" style="margin-top:2rem">
+      <h3>🔑 Cierre del diagnóstico</h3>
+      <p>El taller dejó instalada la disposición y el conocimiento conceptual. El siguiente paso es convertir esa base en <strong>competencia aplicada</strong> con práctica guiada por área, comunicación interna sostenida y un piloto medible que demuestre valor en 90 días.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INGLÉS PRÁCTICO ===================== -->
+<section class="section section-alt" id="ingles">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">04</span>
+      <span class="eyebrow">Anexo 3</span>
+      <h2>Inglés Práctico</h2>
+      <p>Programa de fortalecimiento del idioma inglés orientado a coordinadores, con énfasis en vocabulario, frases habituales y habilidades de comprensión y expresión oral.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card reveal">
+        <div class="card-head">
+          <div class="ic" style="background:var(--blue-soft);color:#1d4ed8">📘</div>
+          <div><h3>Contenido del programa</h3><p>Anexo 3</p></div>
+        </div>
+        <ul class="content-list">
+          <li><strong>Aprendizaje de vocabulario</strong> y frases habituales del inglés.</li>
+          <li><strong>Desarrollo de habilidades de comprensión</strong> y expresión oral.</li>
+        </ul>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-head">
+          <div class="ic" style="background:var(--blue-soft);color:#1d4ed8">📅</div>
+          <div><h3>Datos logísticos</h3><p>Ejecución y cobertura</p></div>
+        </div>
+        <div class="grid-2" style="gap:1rem">
+          <div style="padding:1rem;background:var(--gray-50);border-radius:12px">
+            <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500)">Fechas</div>
+            <div style="font-weight:700;color:var(--navy);margin-top:.3rem;font-size:.9rem">13 · 20 · 27 de agosto<br>03 de septiembre 2026</div>
+          </div>
+          <div style="padding:1rem;background:var(--gray-50);border-radius:12px">
+            <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500)">Participantes</div>
+            <div style="font-weight:700;color:var(--navy);margin-top:.3rem;font-size:.9rem">12 Coordinadores</div>
+          </div>
+          <div style="padding:1rem;background:var(--gray-50);border-radius:12px">
+            <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500)">Instructor</div>
+            <div style="font-weight:700;color:var(--navy);margin-top:.3rem;font-size:.9rem">Diego R. Barrios</div>
+          </div>
+          <div style="padding:1rem;background:var(--gray-50);border-radius:12px">
+            <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500)">Costo total</div>
+            <div style="font-weight:700;color:var(--navy);margin-top:.3rem;font-size:.9rem">$ 480</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CALDERAS (NUEVO) ===================== -->
+<section class="section" id="calderas">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">05</span>
+      <span class="eyebrow">Anexo 4</span>
+      <h2>Curso de Calderas y Generación de Vapor</h2>
+      <p>Curso presencial sobre principios, operación y mantenimiento de calderas y generación de vapor, dictado por C.I.E.A. (Cámara Industriales del Estado Aragua) en alianza con Calderas e Industriales Brivares C.A.</p>
+    </div>
+
+    <div class="kpi-grid reveal">
+      <div class="kpi">
+        <div class="icon teal">🔧</div>
+        <div class="num" data-count="2">0</div>
+        <div class="lbl">Coordinadores participantes</div>
+      </div>
+      <div class="kpi">
+        <div class="icon gold">🏭</div>
+        <div class="num" data-count="5">0</div>
+        <div class="lbl">Módulos temáticos</div>
+      </div>
+      <div class="kpi">
+        <div class="icon blue">💰</div>
+        <div class="num"><small>$</small><span data-count="380">0</span></div>
+        <div class="lbl">Inversión total</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card reveal">
+        <div class="card-head">
+          <div class="ic">📘</div>
+          <div><h3>Contenido del programa</h3><p>Anexo 4 · 5 módulos temáticos</p></div>
+        </div>
+        <ul class="content-list">
+          <li><strong>Calderas y sus tipos.</strong></li>
+          <li><strong>Sistemas de seguridad.</strong></li>
+          <li><strong>Operación y mantenimiento.</strong></li>
+          <li><strong>Tratamiento de aguas.</strong></li>
+          <li><strong>Aspectos legales.</strong></li>
+        </ul>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-head">
+          <div class="ic">📅</div>
+          <div><h3>Datos logísticos</h3><p>Ejecución y cobertura</p></div>
+        </div>
+        <div class="grid-2" style="gap:1rem">
+          <div style="padding:1rem;background:var(--gray-50);border-radius:12px">
+            <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500)">Instructor</div>
+            <div style="font-weight:700;color:var(--navy);margin-top:.3rem;font-size:.88rem">C.I.E.A. — Cámara Industriales del Estado Aragua</div>
+          </div>
+          <div style="padding:1rem;background:var(--gray-50);border-radius:12px">
+            <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500)">Empresa facilitadora</div>
+            <div style="font-weight:700;color:var(--navy);margin-top:.3rem;font-size:.88rem">Calderas e Industriales Brivares C.A.</div>
+          </div>
+          <div style="padding:1rem;background:var(--gray-50);border-radius:12px">
+            <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500)">Participantes</div>
+            <div style="font-weight:700;color:var(--navy);margin-top:.3rem;font-size:.9rem">12 Coordinadores</div>
+          </div>
+          <div style="padding:1rem;background:var(--gray-50);border-radius:12px">
+            <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500)">Costo</div>
+            <div style="font-weight:700;color:var(--navy);margin-top:.3rem;font-size:.85rem">$160 × 2 participantes = $320<br>Viáticos: $60<br><strong style="color:var(--teal)">Total $380</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight-box reveal" style="margin-top:2rem">
+      <h3>🎯 Valor estratégico del programa</h3>
+      <p>Esta formación técnica especializada refuerza las competencias operativas del personal de coordinación en un área crítica para la continuidad productiva: la operación segura y eficiente de calderas y sistemas de generación de vapor. La alianza con C.I.E.A. y Calderas e Industriales Brivares C.A. aporta visión técnica actualizada y buenas prácticas del sector.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OBRA TEATRAL ===================== -->
+<section class="section section-alt" id="teatro">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">06</span>
+      <span class="eyebrow">Anexo 5</span>
+      <h2>Obra Teatral: "Mi Nombre es Esteban. El Inmigrante de Ararat"</h2>
+      <p>Actividad motivacional y cultural ejecutada el 08 de octubre de 2026, en el marco de la conmemoración de los 100 años de la creación del Grupo Telares Maracay (G.T.M.).</p>
+    </div>
+
+    <!-- Datos del evento -->
+    <div class="card reveal" style="margin-bottom:1.5rem">
+      <div class="card-head">
+        <div class="ic" style="background:var(--gold-soft);color:#b45309">🎭</div>
+        <div><h3>Datos del evento</h3><p>Contexto institucional y logística</p></div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <ul class="content-list">
+            <li><strong>Invitación:</strong> Promovida por la Junta Directiva de Jeantex S.A.</li>
+            <li><strong>Objetivo:</strong> Presentación de la obra teatral representativa de la vida del fundador del Grupo Telares Maracay (G.T.M.), Sr. Esteban Zarikian, por conmemoración de los 100 años de la creación del grupo.</li>
+            <li><strong>Fecha:</strong> 08 de Octubre de 2026.</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="content-list">
+            <li><strong>Participantes:</strong> 21 personal de Jeantex + 6 por confirmar = <strong>27 asistentes</strong>.</li>
+            <li><strong>Logística:</strong> Transporte ida y vuelta Caracas-Maracay = $330.</li>
+            <li><strong>Refrigerio:</strong> $233,73.</li>
+            <li><strong>Costo total:</strong> <strong>$563,73</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="kpi-grid reveal">
+      <div class="kpi">
+        <div class="icon gold">🎭</div>
+        <div class="num" data-count="100">0<small>%</small></div>
+        <div class="lbl">La obra cubrió las expectativas</div>
+      </div>
+      <div class="kpi">
+        <div class="icon teal">💬</div>
+        <div class="num" data-count="80.9">0<small>%</small></div>
+        <div class="lbl">Aprecia el mensaje de la obra</div>
+      </div>
+      <div class="kpi">
+        <div class="icon green">🌟</div>
+        <div class="num" data-count="100">0<small>%</small></div>
+        <div class="lbl">Considera que la obra está cargada de valores</div>
+      </div>
+      <div class="kpi">
+        <div class="icon purple">👏</div>
+        <div class="num" data-count="71.4">0<small>%</small></div>
+        <div class="lbl">Calificó el desempeño de los actores como excelente</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card reveal">
+        <div class="card-head">
+          <div class="ic">1</div>
+          <div><h3>Asistencia y satisfacción</h3><p>Frecuencia · Expectativas · Motivos</p></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">¿Frecuencia con regularidad al teatro? · Sí</span><span class="val">9.5%</span></div>
+          <div class="progress-track"><div class="progress-fill teal" data-width="9.5"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">¿Frecuencia con regularidad al teatro? · A veces</span><span class="val">14.2%</span></div>
+          <div class="progress-track"><div class="progress-fill gold" data-width="14.2"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">¿Frecuencia con regularidad al teatro? · No</span><span class="val">76.1%</span></div>
+          <div class="progress-track"><div class="progress-fill coral" data-width="76.1"></div></div>
+        </div>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin:1.2rem 0 .5rem">¿Por qué le agradó?</p>
+        <ul class="content-list">
+          <li>Historia real del Sr. Esteban Zarikian y su legado familiar — <strong>52.3%</strong></li>
+          <li>Crea vínculo de identidad empresa-trabajador — <strong>9.5%</strong></li>
+          <li>Destaca valores de humildad y condición humana — <strong>9.5%</strong></li>
+          <li>Toca la fibra familiar — <strong>9.5%</strong></li>
+          <li>Deseo de superación, familiaridad, amor, constancia y compromiso — <strong>4.7%</strong></li>
+          <li>Ejemplo de sacrificio y valor emocional — <strong>4.7%</strong></li>
+          <li>Vivencia de cómo crecer en la adversidad — <strong>4.7%</strong></li>
+          <li>Modelo de supervisión y superación — <strong>4.7%</strong></li>
+        </ul>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-head">
+          <div class="ic" style="background:var(--gold-soft);color:#b45309">2-6</div>
+          <div><h3>Apreciación, actores y mensajes</h3><p>Evaluación de la obra y su carga de valores</p></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">¿Sabe apreciar los temas y mensajes? · Sí</span><span class="val">80.9%</span></div>
+          <div class="progress-track"><div class="progress-fill green" data-width="80.9"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">¿Sabe apreciar los temas y mensajes? · No</span><span class="val">9.5%</span></div>
+          <div class="progress-track"><div class="progress-fill coral" data-width="9.5"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">¿Sabe apreciar los temas y mensajes? · A veces</span><span class="val">9.5%</span></div>
+          <div class="progress-track"><div class="progress-fill gold" data-width="9.5"></div></div>
+        </div>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin:1.2rem 0 .5rem">Desempeño de los actores</p>
+        <div class="compare-track" style="height:34px">
+          <div class="compare-seg green" style="width:71.4%">Excelente · 71.4%</div>
+          <div class="compare-seg blue" style="width:28.5%">Bueno · 28.5%</div>
+        </div>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin:1.2rem 0 .5rem">Tres mensajes más importantes</p>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Responsabilidad y amor familiar</span><span class="val">71.4%</span></div>
+          <div class="progress-track"><div class="progress-fill teal" data-width="71.4"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Perseverancia, constancia y resiliencia</span><span class="val">19.0%</span></div>
+          <div class="progress-track"><div class="progress-fill gold" data-width="19"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Honestidad</span><span class="val">9.5%</span></div>
+          <div class="progress-track"><div class="progress-fill blue" data-width="9.5"></div></div>
+        </div>
+        <div class="highlight-box" style="margin-top:1.2rem;padding:1rem;background:linear-gradient(135deg,var(--green),#047857)">
+          <h3 style="font-size:.95rem;margin-bottom:.2rem">¿La obra está cargada de valores significativos?</h3>
+          <p style="font-size:.85rem">Sí: <strong>100%</strong> · No: 0%</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:1.5rem">
+      <div class="card reveal">
+        <div class="card-head">
+          <div class="ic" style="background:var(--purple-soft);color:#6d28d9">🏅</div>
+          <div><h3>Jerarquización de valores</h3><p>Ranking completo de 17 valores · posiciones 1 a 9</p></div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem">
+          <div style="padding:.7rem 1rem;background:var(--gold-soft);border-radius:10px;font-weight:700;color:#b45309;font-size:.88rem">1. La Familia</div>
+          <div style="padding:.7rem 1rem;background:var(--gray-100);border-radius:10px;font-weight:600;color:var(--gray-700);font-size:.88rem">2. La Honestidad</div>
+          <div style="padding:.7rem 1rem;background:var(--gray-100);border-radius:10px;font-weight:600;color:var(--gray-700);font-size:.88rem">3. El Amor</div>
+          <div style="padding:.7rem 1rem;background:var(--gray-100);border-radius:10px;font-weight:600;color:var(--gray-700);font-size:.88rem">4. La Lealtad</div>
+          <div style="padding:.7rem 1rem;background:var(--gray-100);border-radius:10px;font-weight:600;color:var(--gray-700);font-size:.88rem">5. El Sacrificio</div>
+          <div style="padding:.7rem 1rem;background:var(--gray-100);border-radius:10px;font-weight:600;color:var(--gray-700);font-size:.88rem">6. El Compromiso</div>
+          <div style="padding:.7rem 1rem;background:var(--gray-100);border-radius:10px;font-weight:600;color:var(--gray-700);font-size:.88rem">7. La Resiliencia</div>
+          <div style="padding:.7rem 1rem;background:var(--gray-100);border-radius:10px;font-weight:600;color:var(--gray-700);font-size:.88rem">8. El Agradecimiento</div>
+          <div style="padding:.7rem 1rem;background:var(--gray-100);border-radius:10px;font-weight:600;color:var(--gray-700);font-size:.88rem">9. La Visión</div>
+        </div>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin:1.2rem 0 .5rem">Otros valores citados</p>
+        <ul class="content-list">
+          <li>El legado familiar.</li>
+          <li>Negarse a la tentación del dinero fácil.</li>
+        </ul>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-head">
+          <div class="ic" style="background:var(--teal-soft);color:#0d7a7a">💡</div>
+          <div><h3>Impacto y observaciones</h3><p>Comportamientos fomentados y comentarios de los asistentes</p></div>
+        </div>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.5rem">Impacto en Jeantex</p>
+        <div style="display:flex;gap:.6rem;margin-bottom:1.2rem">
+          <span class="badge green" style="padding:.5rem .9rem;font-size:.8rem">Unión · Sí</span>
+          <span class="badge green" style="padding:.5rem .9rem;font-size:.8rem">Convivencia · Sí</span>
+        </div>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:.5rem">Comentarios de los asistentes</p>
+        <div class="quotes" style="grid-template-columns:1fr">
+          <div class="quote">Muy acertado como un momento de esparcimiento.<span class="author">Asistente</span></div>
+          <div class="quote">Felicitaciones a todo el personal involucrado en el evento.<span class="author">Asistente</span></div>
+          <div class="quote">Mejorar la logística y el refrigerio.<span class="author">Asistente</span></div>
+          <div class="quote">Realizar este tipo de actividades de manera más frecuente.<span class="author">Asistente</span></div>
+          <div class="quote">Agradecimiento a la Junta Directiva por la invitación.<span class="author">Asistente</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONFERENCIA LIDERAZGO RESILIENTE ===================== -->
+<section class="section" id="conferencia">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">07</span>
+      <span class="eyebrow">Anexo 6</span>
+      <h2>Conferencia: Liderazgo Resiliente</h2>
+      <p>Medición de impacto, satisfacción y transferencia del conocimiento de la conferencia ejecutada el 13 de agosto de 2026. Actividad sin costo, gracias a la cortesía de la Cámara de Industriales del Estado Aragua.</p>
+    </div>
+
+    <div class="kpi-grid reveal">
+      <div class="kpi">
+        <div class="icon teal">🎯</div>
+        <div class="num" data-count="90.9">0<small>%</small></div>
+        <div class="lbl">Cubrió sus expectativas</div>
+      </div>
+      <div class="kpi">
+        <div class="icon gold">⚡</div>
+        <div class="num" data-count="81.8">0<small>%</small></div>
+        <div class="lbl">Motivación alta tras el evento</div>
+      </div>
+      <div class="kpi">
+        <div class="icon green">🎤</div>
+        <div class="num" data-count="72.7">0<small>%</small></div>
+        <div class="lbl">Metodología de presentación muy buena</div>
+      </div>
+      <div class="kpi">
+        <div class="icon purple">⭐</div>
+        <div class="num" data-count="100">0<small>%</small></div>
+        <div class="lbl">Conferencistas valorados como excelentes</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card reveal">
+        <div class="card-head">
+          <div class="ic">1</div>
+          <div><h3>Motivación al evento</h3><p>Nivel de motivación luego de asistir a la conferencia</p></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Motivación alta</span><span class="val">81.8%</span></div>
+          <div class="progress-track"><div class="progress-fill green" data-width="81.8"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Motivación media</span><span class="val">9.0%</span></div>
+          <div class="progress-track"><div class="progress-fill gold" data-width="9"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-head"><span class="name">Motivación baja</span><span class="val">8.8%</span></div>
+          <div class="progress-track"><div class="progress-fill coral" data-width="8.8"></div></div>
+        </div>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin:1.2rem 0 .5rem">¿Por qué cubrió sus expectativas?</p>
+        <ul class="content-list">
+          <li>Dio información actualizada.</li>
+          <li>Aportó estrategias para mantener la productividad y bienestar emocional.</li>
+          <li>Reforzó conocimientos para el crecimiento personal.</li>
+          <li>Bien estructurados los temas desde lo organizacional, personal y salud.</li>
+        </ul>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-head">
+          <div class="ic" style="background:var(--gold-soft);color:#b45309">5</div>
+          <div><h3>Metodología de presentación</h3><p>Calidad percibida de la exposición</p></div>
+        </div>
+        <div class="compare-track" style="height:42px;margin-bottom:1rem">
+          <div class="compare-seg green" style="width:72.7%">Muy buena · 72.7%</div>
+          <div class="compare-seg blue" style="width:18.1%">Buena · 18.1%</div>
+          <div class="compare-seg gold" style="width:9.0%">Adecuada · 9%</div>
+        </div>
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin:1.2rem 0 .5rem">Conferencistas más valorados</p>
+        <div class="grid-2" style="gap:.6rem">
+          <div style="padding:.9rem;background:var(--gray-50);border-radius:10px;text-align:center">
+            <div style="font-weight:800;color:var(--navy);font-size:1.1rem">27.2%</div>
+            <div style="font-size:.78rem;color:var(--gray-600)">Lic. Estefanía Lugo</div>
+          </div>
+          <div style="padding:.9rem;background:var(--gray-50);border-radius:10px;text-align:center">
+            <div style="font-weight:800;color:var(--navy);font-size:1.1rem">27.2%</div>
+            <div style="font-size:.78rem;color:var(--gray-600)">Dra. Patricia Correa</div>
+          </div>
+          <div style="padding:.9rem;background:var(--gray-50);border-radius:10px;text-align:center">
+            <div style="font-weight:800;color:var(--navy);font-size:1.1rem">18.1%</div>
+            <div style="font-size:.78rem;color:var(--gray-600)">Lic. Gustavo Romero</div>
+          </div>
+          <div style="padding:.9rem;background:var(--gold-soft);border-radius:10px;text-align:center">
+            <div style="font-weight:800;color:#b45309;font-size:1.1rem">27.2%</div>
+            <div style="font-size:.78rem;color:#b45309;font-weight:600">Los 3 excelentes</div>
+          </div>
+        </div>
+        <p style="font-size:.8rem;color:var(--gray-500);margin-top:1rem;font-style:italic">«Suministraron buenas herramientas para la estabilidad emocional y salud mental. Muy bien estructuradas las tres conferencias. Hicieron uso de un lenguaje apropiado y técnico resaltando la importancia del factor humano con criterios profesionales. Presentaron otra óptica para superar miedos y angustias actuales.»</p>
+      </div>
+    </div>
+
+    <div class="card reveal" style="margin-top:1.5rem">
+      <div class="card-head">
+        <div class="ic" style="background:var(--purple-soft);color:#6d28d9">6</div>
+        <div><h3>Importancia de las conferencias</h3><p>Orden de importancia según los asistentes</p></div>
+      </div>
+      <div class="grid-3">
+        <div style="padding:1.2rem;background:var(--purple-soft);border-radius:14px">
+          <div style="font-weight:900;font-size:1.6rem;color:#6d28d9;letter-spacing:-.03em">#1</div>
+          <h4 style="margin:.4rem 0 .3rem;font-size:.95rem">Aspectos Psicológicos</h4>
+          <p style="font-size:.82rem;color:var(--gray-600)">Las 5 etapas del duelo · Equilibrio emocional.</p>
+        </div>
+        <div style="padding:1.2rem;background:var(--blue-soft);border-radius:14px">
+          <div style="font-weight:900;font-size:1.6rem;color:#1d4ed8;letter-spacing:-.03em">#2</div>
+          <h4 style="margin:.4rem 0 .3rem;font-size:.95rem">Salud Laboral</h4>
+          <p style="font-size:.82rem;color:var(--gray-600)">Estrategias seguras · Escucha activa.</p>
+        </div>
+        <div style="padding:1.2rem;background:var(--green-soft);border-radius:14px">
+          <div style="font-weight:900;font-size:1.6rem;color:#047857;letter-spacing:-.03em">#3</div>
+          <h4 style="margin:.4rem 0 .3rem;font-size:.95rem">Productividad Post-evento</h4>
+          <p style="font-size:.82rem;color:var(--gray-600)">Conciencia · Planes de contingencia.</p>
+        </div>
+      </div>
+      <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-500);margin:1.2rem 0 .5rem">Puntos más importantes por conferencia</p>
+      <div class="grid-3">
+        <div>
+          <h4 style="font-size:.9rem;color:var(--navy);margin-bottom:.4rem">Productividad</h4>
+          <ul class="content-list">
+            <li>Tomar conciencia de lo ocurrido mejorando compromiso y dedicación.</li>
+            <li>Consideración de aspectos sociales y económicos para el logro de resultados.</li>
+            <li>Sostenibilidad de la empresa.</li>
+            <li>Lograr orden y equilibrio a pesar de la incertidumbre organizacional.</li>
+            <li>Diseño de planes de contingencia.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-size:.9rem;color:var(--navy);margin-bottom:.4rem">Salud Laboral</h4>
+          <ul class="content-list">
+            <li>Motivar a ser humanista y empático con quien lo necesita.</li>
+            <li>Estrategias y desafíos para producir de manera segura y saludable.</li>
+            <li>Parte humana: aplicar escucha activa y escucha efectiva.</li>
+            <li>Búsqueda de orientación y soluciones.</li>
+            <li>Buscar ayuda profesional.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-size:.9rem;color:var(--navy);margin-bottom:.4rem">Aspectos Psicológicos</h4>
+          <ul class="content-list">
+            <li>Las cinco etapas del duelo: cómo superarlo. Herramienta útil.</li>
+            <li>Incidencia del equilibrio emocional en las relaciones y desempeño laboral.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:1.5rem">
+      <div class="card reveal">
+        <div class="card-head">
+          <div class="ic" style="background:var(--teal-soft);color:#0d7a7a">8</div>
+          <div><h3>Transferencia de lo aprendido</h3><p>¿Cómo lo haría?</p></div>
+        </div>
+        <ul class="content-list">
+          <li><strong>Aplicando técnicas de comunicación.</strong> Multiplicando el conocimiento.</li>
+          <li><strong>Promoviendo estrategias de motivación.</strong></li>
+          <li><strong>Trabajando con la visión de mejorar al equipo.</strong></li>
+          <li><strong>Buena actitud</strong> personal y en lo laboral.</li>
+          <li><strong>Desde la organización</strong> y no desde la aplicación individual.</li>
+        </ul>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-head">
+          <div class="ic" style="background:var(--gold-soft);color:#b45309">9</div>
+          <div><h3>Expectativas de futuras conferencias</h3><p>Temas de interés manifestados</p></div>
+        </div>
+        <div class="pill-list">
+          <span class="pill teal">Gestión del talento humano frente a la crisis</span>
+          <span class="pill gold">Liderazgo y toma de decisiones</span>
+          <span class="pill blue">Seguridad industrial</span>
+          <span class="pill purple">Impacto de redes sociales en el comportamiento</span>
+          <span class="pill teal">Riesgos y beneficios de la IA aplicada a la empresa</span>
+          <span class="pill gold">Bienestar psicológico</span>
+          <span class="pill blue">Productividad</span>
+          <span class="pill purple">Fundamentos y principios gerenciales</span>
+          <span class="pill teal">Reconfiguración demográfica y nuevas dinámicas de liderazgo</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reveal" style="margin-top:1.5rem">
+      <div class="card-head">
+        <div class="ic">10</div>
+        <div><h3>Calificación del evento</h3><p>Escala: MB (Muy Bien) · A (Adecuado) · M (Mejorar) · NA (No Adecuado)</p></div>
+      </div>
+      <div class="grid-3" style="gap:1rem">
+        <div style="text-align:center;padding:1rem;background:var(--gray-50);border-radius:12px">
+          <div style="font-size:1.8rem;font-weight:900;color:var(--navy)">81.8%</div>
+          <div style="font-size:.78rem;color:var(--gray-500);font-weight:600">Invitación · MB</div>
+        </div>
+        <div style="text-align:center;padding:1rem;background:var(--gray-50);border-radius:12px">
+          <div style="font-size:1.8rem;font-weight:900;color:var(--navy)">63.6%</div>
+          <div style="font-size:.78rem;color:var(--gray-500);font-weight:600">Participación · MB</div>
+        </div>
+        <div style="text-align:center;padding:1rem;background:var(--gray-50);border-radius:12px">
+          <div style="font-size:1.8rem;font-weight:900;color:var(--navy)">54.5%</div>
+          <div style="font-size:.78rem;color:var(--gray-500);font-weight:600">Traslado · MB</div>
+        </div>
+        <div style="text-align:center;padding:1rem;background:var(--gray-50);border-radius:12px">
+          <div style="font-size:1.8rem;font-weight:900;color:var(--navy)">54.5%</div>
+          <div style="font-size:.78rem;color:var(--gray-500);font-weight:600">Tiempo del evento · Adecuado</div>
+        </div>
+        <div style="text-align:center;padding:1rem;background:var(--gray-50);border-radius:12px">
+          <div style="font-size:1.8rem;font-weight:900;color:var(--navy)">45.4%</div>
+          <div style="font-size:.78rem;color:var(--gray-500);font-weight:600">Locación · MB</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:1.5rem">
+      <div class="highlight-box reveal" style="background:linear-gradient(135deg,var(--navy),var(--navy-3));margin:0">
+        <h3>✅ Conclusiones</h3>
+        <ul class="content-list" style="margin-top:.6rem">
+          <li style="color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.1)">Alta motivación y satisfacción general.</li>
+          <li style="color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.1)">Excelente percepción de los conferencistas.</li>
+          <li style="color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.1)">Temas psicológicos más valorados.</li>
+          <li style="color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.1)">Aplicación práctica deseada.</li>
+          <li style="color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.1)">Interés en temas actuales: IA, liderazgo y bienestar.</li>
+        </ul>
+      </div>
+      <div class="highlight-box gold reveal d1" style="margin:0">
+        <h3>🚀 Recomendación</h3>
+        <p>Mantener el enfoque humano y práctico, fortaleciendo la salud mental y el liderazgo adaptativo. Aprovechar la alianza con la Cámara de Industriales del Estado Aragua para futuras actividades sin costo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+CONCLUSIONES GENERALES ===================== -->
+<section class="section section-dark" id="conclusiones">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num gold">08</span>
+      <span class="eyebrow" style="color:var(--gold)">Cierre del informe</span>
+      <h2>Conclusiones generales 2026</h2>
+      <p>El programa de capacitación y actividades motivacionales ejecutado por Jeantex S.A. durante 2026 consolidó una base sólida de disposición, conocimiento y satisfacción. El reto para el siguiente ciclo es convertir esa base en competencia aplicada y sostenida en el tiempo.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="kpi reveal" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)">
+        <div class="icon teal" style="background:rgba(20,184,166,.2);color:#5eead4">🎓</div>
+<div class="num" style="color:#fff" data-count="68">0</div>
+<div class="lbl" style="color:rgba(255,255,255,.6)">Participaciones en formación</div>
+      </div>
+      <div class="kpi reveal d1" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)">
+        <div class="icon gold" style="background:rgba(245,158,11,.2);color:#fcd34d">📈</div>
+        <div class="num" style="color:#fff" data-count="96.7">0<small>%</small></div>
+        <div class="lbl" style="color:rgba(255,255,255,.6)">Recomendación promedio</div>
+      </div>
+      <div class="kpi reveal d2" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)">
+        <div class="icon green" style="background:rgba(16,185,129,.2);color:#6ee7b7">💰</div>
+        <div class="num" style="color:#fff"><small style="color:rgba(255,255,255,.7)">$</small><span data-count="3893.73">0</span></div>
+        <div class="lbl" style="color:rgba(255,255,255,.6)">Inversión total 2026</div>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:2rem">
+      <div class="card reveal" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)">
+        <div class="card-head" style="border-color:rgba(255,255,255,.1)">
+          <div class="ic" style="background:rgba(20,184,166,.2);color:#5eead4">✅</div>
+          <div><h3 style="color:#fff">Lo que se logró</h3><p style="color:rgba(255,255,255,.5)">Fortalezas del plan 2026</p></div>
+        </div>
+        <ul class="content-list">
+          <li style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)">Cobertura transversal: mandos medios, coordinadores y administrativos.</li>
+          <li style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)">Alta satisfacción y valoración del instructor en todos los programas.</li>
+          <li style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)">Instalación de una cultura incipiente de medición con KPIs y OKRs.</li>
+          <li style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)">Formación técnica especializada en calderas y generación de vapor.</li>
+          <li style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)">Fortalecimiento del sentido de pertenencia y valores a través de la obra teatral.</li>
+          <li style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)">Sensibilización en salud mental y liderazgo resiliente.</li>
+        </ul>
+      </div>
+      <div class="card reveal d1" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)">
+        <div class="card-head" style="border-color:rgba(255,255,255,.1)">
+          <div class="ic" style="background:rgba(245,158,11,.2);color:#fcd34d">🎯</div>
+          <div><h3 style="color:#fff">Próximos pasos</h3><p style="color:rgba(255,255,255,.5)">Recomendaciones estratégicas 2027</p></div>
+        </div>
+        <ul class="content-list">
+          <li style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)">Institucionalizar la práctica supervisada de GROW con seguimiento bimestral.</li>
+          <li style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)">Implementar la Fase 2 aplicada de Indicadores de Gestión por área.</li>
+          <li style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)">Fortalecer la comunicación interna del modelo de medición.</li>
+          <li style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)">Ampliar la formación técnica especializada (calderas, vapor, seguridad).</li>
+          <li style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)">Optimizar la logística y ventilación de los espacios de formación.</li>
+          <li style="color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)">Ampliar la programación de conferencias sobre IA, liderazgo y bienestar.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="highlight-box gold reveal" style="margin-top:2rem">
+      <h3>💡 Mensaje de cierre</h3>
+      <p>El aprendizaje no mide edades sino disposición y flexibilidad para lograr permanencia en el tiempo. Jeantex S.A. ha sembrado una cultura de liderazgo consciente, medición, bienestar y formación técnica especializada; el siguiente paso es cosechar resultados sostenidos con práctica, seguimiento y coherencia organizacional.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="brand">JEANTEX S.A.</div>
+  <p>Actividades de Capacitación y Motivacionales · Año 2026</p>
+  <p>Programa General de Técnicas y Herramientas Gerenciales</p>
+  <p>Recursos Humanos · Noviembre 2026</p>
+  <div class="meta">
+    Documento institucional de uso interno · Elaborado con base en los informes de instructores y evaluaciones de los participantes.
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+/* ============================================================
+   1. TABS
+   ============================================================ */
+document.querySelectorAll('.tabs').forEach(group => {
+  const buttons = group.querySelectorAll('.tab-btn');
+  const scope = group.parentElement;
+  const panels = scope.querySelectorAll('.tab-panel');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+      buttons.forEach(b => b.classList.toggle('active', b === btn));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.panel === target));
+    });
+  });
+});
+
+/* ============================================================
+   2. REVEAL ON SCROLL
+   ============================================================ */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ============================================================
+   3. COUNTERS
+   ============================================================ */
+function animateCounter(el) {
+  const target = parseFloat(el.dataset.count);
+  const isDecimal = el.dataset.count.includes('.');
+  const duration = 1600;
+  const start = performance.now();
+  const update = (now) => {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const value = target * eased;
+    if (isDecimal) {
+      el.textContent = value.toFixed(2).replace('.', ',');
+    } else {
+      el.textContent = Math.round(value);
+    }
+    if (progress < 1) requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+}
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.4 });
+document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+/* ============================================================
+   4. PROGRESS BARS
+   ============================================================ */
+const progressObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      el.style.width = el.dataset.width + '%';
+      progressObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.progress-fill[data-width]').forEach(el => progressObserver.observe(el));
+
+/* ============================================================
+   5. SCROLL SPY + NAV
+   ============================================================ */
+const sections = document.querySelectorAll('section[id], header[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY + 120;
+  let current = '';
+  sections.forEach(sec => {
+    if (sec.offsetTop <= scrollY) current = sec.id;
+  });
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+  });
+  const toTop = document.getElementById('toTop');
+  toTop.classList.toggle('show', window.scrollY > 600);
+});
+
+/* ============================================================
+   6. BOTÓN TOP
+   ============================================================ */
+document.getElementById('toTop').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ============================================================
+   7. RADAR CHART
+   ============================================================ */
+(function drawRadar() {
+  const svg = document.getElementById('radarChart');
+  if (!svg) return;
+  const labels = ['Conocimiento', 'Viabilidad', 'Exposición\nprevia', 'Competencia', 'Satisfacción', 'Madurez\npercibida'];
+  const values = [100, 100, 31.4, 70, 90, 52.3];
+  const cx = 210, cy = 210, R = 135;
+  const n = labels.length;
+  const angle = (Math.PI * 2) / n;
+  const startAngle = -Math.PI / 2;
+
+  function point(i, r) {
+    const a = startAngle + i * angle;
+    return [cx + Math.cos(a) * r, cy + Math.sin(a) * r];
+  }
+
+  [0.2, 0.4, 0.6, 0.8, 1].forEach(level => {
+    const pts = [];
+    for (let i = 0; i < n; i++) pts.push(point(i, R * level).join(','));
+    const poly = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+    poly.setAttribute('points', pts.join(' '));
+    poly.setAttribute('fill', 'none');
+    poly.setAttribute('stroke', '#e2e8f0');
+    poly.setAttribute('stroke-width', '1');
+    svg.appendChild(poly);
+  });
+
+  for (let i = 0; i < n; i++) {
+    const [x, y] = point(i, R);
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', cx); line.setAttribute('y1', cy);
+    line.setAttribute('x2', x); line.setAttribute('y2', y);
+    line.setAttribute('stroke', '#e2e8f0');
+    line.setAttribute('stroke-width', '1');
+    svg.appendChild(line);
+  }
+
+  const dataPts = [];
+  for (let i = 0; i < n; i++) {
+    dataPts.push(point(i, R * (values[i] / 100)).join(','));
+  }
+  const dataPoly = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+  dataPoly.setAttribute('points', dataPts.join(' '));
+  dataPoly.setAttribute('fill', 'rgba(20,184,166,.22)');
+  dataPoly.setAttribute('stroke', '#14b8a6');
+  dataPoly.setAttribute('stroke-width', '2.5');
+  dataPoly.setAttribute('stroke-linejoin', 'round');
+  svg.appendChild(dataPoly);
+
+  for (let i = 0; i < n; i++) {
+    const [x, y] = point(i, R * (values[i] / 100));
+    const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    c.setAttribute('cx', x); c.setAttribute('cy', y);
+    c.setAttribute('r', '5');
+    c.setAttribute('fill', '#0EA5A5');
+    c.setAttribute('stroke', '#fff');
+    c.setAttribute('stroke-width', '2');
+    svg.appendChild(c);
+  }
+
+  for (let i = 0; i < n; i++) {
+    const [x, y] = point(i, R + 28);
+    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    text.setAttribute('x', x);
+    text.setAttribute('y', y);
+    text.setAttribute('text-anchor', 'middle');
+    text.setAttribute('dominant-baseline', 'middle');
+    text.setAttribute('fill', '#334155');
+    text.setAttribute('font-size', '11');
+    text.setAttribute('font-weight', '700');
+    text.setAttribute('font-family', 'Inter, sans-serif');
+    const lines = labels[i].split('\n');
+    lines.forEach((line, idx) => {
+      const tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
+      tspan.setAttribute('x', x);
+      tspan.setAttribute('dy', idx === 0 ? (lines.length > 1 ? '-0.4em' : '0') : '1.2em');
+      tspan.textContent = line;
+      text.appendChild(tspan);
+    });
+    svg.appendChild(text);
+  }
+})();
+
+/* ============================================================
+   8. IMPRESIÓN: valores finales en el PDF
+   ============================================================ */
+window.addEventListener('beforeprint', () => {
+  document.querySelectorAll('[data-count]').forEach(el => {
+    const target = parseFloat(el.dataset.count);
+    const isDecimal = el.dataset.count.includes('.');
+    if (isDecimal) {
+      el.textContent = target.toFixed(2).replace('.', ',');
+    } else {
+      el.textContent = Math.round(target);
+    }
+  });
+  document.querySelectorAll('.progress-fill[data-width]').forEach(el => {
+    el.style.width = el.dataset.width + '%';
+  });
+});
+
+window.addEventListener('afterprint', () => {
+  document.querySelectorAll('.tabs').forEach(group => {
+    const activeBtn = group.querySelector('.tab-btn.active');
+    if (!activeBtn) return;
+    const target = activeBtn.dataset.tab;
+    const scope = group.parentElement;
+    scope.querySelectorAll('.tab-panel').forEach(p => {
+      p.classList.toggle('active', p.dataset.panel === target);
+    });
+  });
+});
+</script>
+</body>
+</html>
